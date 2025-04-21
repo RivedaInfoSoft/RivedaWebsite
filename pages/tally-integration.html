@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tally Integration Services - Connect Tally with other business systems">
+  <title>Tally Integration - Riveda Infosoft</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    body {
+      background: #f0f2f5;
+    }
+
+    .logo-section {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .logo-section img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .nav-menu {
+      background: #003087;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    .nav-menu a {
+      color: white;
+      text-decoration: none;
+      padding: 0 25px;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    .title-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .title-section h1 {
+      color: #003087;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .title-section p {
+      color: #666;
+      font-size: 1.2em;
+    }
+
+    .services-heading {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 1.8em;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .service-card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-left: 4px solid #003087;
+    }
+
+    .service-card h3 {
+      color: #003087;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+
+    .service-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+
+    .features-list {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .features-list h2 {
+      color: #003087;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    .features-list ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .features-list li {
+      padding-left: 25px;
+      position: relative;
+      color: #666;
+    }
+
+    .features-list li:before {
+      content: '✓';
+      color: #003087;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu a {
+        padding: 0 15px;
+        font-size: 14px;
+      }
+
+      .container {
+        padding: 0 15px;
+        margin: 20px auto;
+      }
+
+      .title-section h1 {
+        font-size: 2em;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-list ul {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .back-button {
+      display: inline-block;
+      color: #003087;
+      text-decoration: none;
+      margin-bottom: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+      text-align: left;
+    }
+
+    .back-button:hover {
+      color: #004299;
+    }
+
+    .back-button i {
+      margin-right: 5px;
+    }
+
+    .about-section {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      color: #003087;
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    .about-section p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .about-card {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #003087;
+    }
+
+    .about-card h3 {
+      color: #003087;
+      margin-bottom: 15px;
+      font-size: 1.3em;
+    }
+
+    .about-card p {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-section">
+    <img src="../images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
+  </div>
+
+  <div class="nav-menu">
+    <a href="../index.html">Home</a>
+    <a href="#features">Features</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="container">
+    <a href="../index.html" class="back-button">← Back to Home</a>
+
+    <div class="title-section">
+      <h1>Tally Integration</h1>
+      <p>Seamlessly connect Tally with your business systems</p>
+    </div>
+
+    <h2 class="services-heading">Integration Capabilities</h2>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>E-commerce Platforms</h3>
+        <p>Connect Tally with popular e-commerce platforms for automated order processing and inventory management.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>CRM Systems</h3>
+        <p>Integrate customer data and sales information between Tally and your CRM system.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Payment Gateways</h3>
+        <p>Automate payment reconciliation between Tally and various payment gateways.</p>
+      </div>
+    </div>
+
+    <div id="features" class="features-list">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Real-time data synchronization</li>
+        <li>Automated transaction processing</li>
+        <li>Custom API development</li>
+        <li>Data migration services</li>
+        <li>Error handling and validation</li>
+        <li>24/7 technical support</li>
+      </ul>
+    </div>
+
+    <div id="benefits" class="features-list">
+      <h2>Benefits</h2>
+      <ul>
+        <li>Reduced manual data entry</li>
+        <li>Improved accuracy and efficiency</li>
+        <li>Real-time financial visibility</li>
+        <li>Streamlined operations</li>
+        <li>Cost savings</li>
+        <li>Enhanced decision making</li>
+      </ul>
+    </div>
+
+    <div id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>Riveda Infosoft is a leading provider of Tally solutions and services, dedicated to empowering businesses with innovative technology solutions.</p>
+      
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>To provide cutting-edge business solutions that enhance efficiency and drive growth for our clients.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Expertise</h3>
+          <p>With years of experience in Tally solutions, we offer comprehensive services tailored to your business needs.</p>
+        </div>
+        <div class="about-card">
+          <h3>Our Commitment</h3>
+          <p>We are committed to delivering excellence through innovative solutions and exceptional customer service.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="../index.html" class="back-button" style="margin-top: 20px;">← Back to Home</a>
+  </div>
+</body>
+</html> 

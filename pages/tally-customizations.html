@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Riveda Infosoft - Professional Tally customization services including invoice customization, report customization, TDL development, and data integration solutions.">
+    <meta name="keywords" content="Tally Customization, TDL Development, Invoice Customization, Report Customization, Riveda Infosoft">
+    <meta name="author" content="Riveda Infosoft">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <title>Tally Customizations - Riveda Infosoft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .logo-section {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-section img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .nav-menu {
+            background: #003087;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0 25px;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .header {
+            background-color: #D3DCE0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            background-color: #003087;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .nav a:hover {
+            background-color: #007B7F;
+        }
+
+        .service-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .service-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .service-header h1 {
+            color: #003087;
+            margin-bottom: 15px;
+        }
+
+        .service-header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .features-section {
+            margin: 40px 0;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #003087;
+        }
+
+        .feature-card h3 {
+            color: #003087;
+            margin-bottom: 10px;
+        }
+
+        .solutions-section {
+            margin: 40px 0;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .solution-card {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .solution-card h3 {
+            color: #003087;
+            margin-bottom: 15px;
+        }
+
+        .process-section {
+            margin: 40px 0;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: #003087;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-size: 20px;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 40px 0;
+            padding: 40px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #003087;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #007B7F;
+        }
+
+        .footer {
+            background-color: #37474F;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            color: #B0BEC5;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #003087;
+            text-decoration: none;
+            padding: 8px 20px;
+            font-size: 16px;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            color: #007B7F;
+        }
+
+        .bottom-nav {
+            text-align: left;
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="../images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
+    </div>
+    <nav class="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="#features">Features</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <a href="../index.html" class="back-button">← Back to Home</a>
+
+        <div class="service-container">
+            <div class="service-header">
+                <h1>Tally Customizations</h1>
+                <p>Custom invoice and report solutions tailored to your business needs in Tally</p>
+            </div>
+
+            <section class="features-section">
+                <h2>Our Customization Services</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Custom Reports</h3>
+                        <p>Tailored financial reports designed specifically for your business requirements</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Automated Workflows</h3>
+                        <p>Streamline your business processes with automated data entry and processing</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Integration Solutions</h3>
+                        <p>Seamless integration with other business software and applications</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Custom Forms</h3>
+                        <p>Design and implement custom forms for data entry and documentation</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" class="benefits-section">
+                <h2>Benefits</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <h3>Increased Efficiency</h3>
+                        <p>Save time and reduce manual errors with automated processes</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Better Decision Making</h3>
+                        <p>Access customized reports and analytics for informed business decisions</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Enhanced Productivity</h3>
+                        <p>Streamline workflows and improve team collaboration</p>
+                    </div>
+                    <div class="benefit-card">
+                        <h3>Cost Savings</h3>
+                        <p>Reduce operational costs through automation and optimization</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Us</h2>
+                <p>Ready to transform your Tally experience? Get in touch with us today!</p>
+                <div class="contact-info">
+                    <p>Email: info@rivedainfosoft.com</p>
+                    <p>Phone: +91 1234567890</p>
+                    <p>Address: Your Business Address, City, State, Country</p>
+                </div>
+            </section>
+
+            <div class="bottom-nav">
+                <a href="../index.html" class="back-button" style="margin-top: 20px;">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Riveda Infosoft | <a href="mailto:info@rivedainfosoft.com">info@rivedainfosoft.com</a> | +91 9490128503</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,219 @@
+/* Common styles for Riveda Infosoft website */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #D3DCE0;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+/* Logo Section */
+.logo-section {
+    background: linear-gradient(135deg, #ffffff, #f0f7ff);
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section img {
+    max-height: 60px;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-section img:hover {
+    transform: scale(1.05);
+}
+
+/* Header */
+.header {
+    background-color: #D3DCE0;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.header img {
+    max-height: 100px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.nav-menu {
+    background: #003087;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0 25px;
+    font-size: 16px;
+}
+
+/* Back Button */
+.back-button {
+    display: inline-block;
+    color: #003087;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: normal;
+    position: relative;
+    padding-left: 20px;
+}
+
+.back-button:before {
+    content: "←";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.back-button:hover {
+    color: #007B7F;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Title Section */
+.title-section {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-left: 4px solid #003087;
+}
+
+.title-section h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.title-section p {
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Service Cards */
+.service-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #003087;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    color: #003087;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.service-card p {
+    color: #666;
+}
+
+/* Section Headings */
+.section-heading {
+    color: #333;
+    font-size: 1.8em;
+    margin: 40px 0 20px;
+}
+
+/* Grid Layouts */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #37474F;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #B0BEC5;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    margin: 40px 0;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #003087;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #007B7F;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header img {
+        max-width: 100%;
+    }
+
+    .title-section h1 {
+        font-size: 2em;
+    }
+} 

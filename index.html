@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Riveda Infosoft: Tally TDL & VBA Solutions for SMEs">
+  <title>Riveda Infosoft - Tally & VBA Solutions</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e8f0ff, #f0f5ff);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      background: linear-gradient(135deg, #1a365d, #2c5282);
+      padding: 8px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(44, 82, 130, 0.2);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 15px;
+      position: relative;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    nav ul li a:hover, nav ul li a.active {
+      background-color: #4299e1;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #2c5282;
+      top: 100%;
+      left: 0;
+      min-width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      border-radius: 5px;
+      transition: opacity 0.2s ease;
+    }
+    .dropdown a {
+      display: block;
+      padding: 10px 15px;
+      font-size: 14px;
+      color: #ffffff;
+    }
+    .dropdown a:hover {
+      background-color: #4299e1;
+    }
+    nav ul li:hover .dropdown {
+      display: block;
+      opacity: 1;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #ebf4ff, #e6fffa);
+      text-align: left;
+      padding: 10px;
+      margin-top: 60px;
+      border-bottom: 1px solid #bee3f8;
+      position: relative;
+    }
+    header img {
+      max-height: 180px;
+      width: auto;
+      margin-bottom: 5px;
+      margin-left: -10px;
+      margin-top: -10px;
+    }
+    header .contact-info {
+      font-size: 16px;
+      margin-top: 5px;
+      letter-spacing: 1px;
+      color: #2d3748;
+    }
+    header .contact-info a {
+      color: #2c5282;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    header .contact-info a:hover {
+      color: #4299e1;
+    }
+    header .contact-info i {
+      color: #2c5282;
+      margin-right: 5px;
+    }
+    header .contact-info i:hover {
+      color: #4299e1;
+    }
+
+    /* Main Content */
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      background: linear-gradient(135deg, #f5f7fa, #edf2f7);
+      min-height: 180px;
+      margin-top: 10px;
+    }
+
+    .main-content .logo-left {
+      max-width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .main-content .logo-left img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+
+    .main-content .logo-right {
+      max-width: 20%;
+    }
+
+    .main-content .logo-right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main-content .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 14px;
+      color: #2d3748;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .main-content .contact-info div {
+      display: flex;
+      align-items: center;
+    }
+
+    .main-content .contact-info i {
+      color: #2c5282;
+      margin-right: 5px;
+    }
+
+    .main-content .contact-info a {
+      color: #2c5282;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .main-content .contact-info a:hover {
+      color: #4299e1;
+    }
+
+    .main-content .contact-info a:hover i {
+      color: #4299e1;
+    }
+
+    .main-content .tagline {
+      flex: 1;
+      text-align: center;
+      padding: 0 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .main-content .tagline::before,
+    .main-content .tagline::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #2c5282, transparent);
+    }
+
+    .main-content .tagline::before {
+      left: -30px;
+    }
+
+    .main-content .tagline::after {
+      right: -30px;
+    }
+
+    .main-content .tagline .first-line {
+      font-size: 2.8rem;
+      color: #2c5282;
+      margin-bottom: 5px;
+      font-weight: 700;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      line-height: 1.2;
+    }
+
+    .main-content .tagline .second-line {
+      font-size: 2rem;
+      color: #2c5282;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+
+    .main-content .tagline .highlight {
+      color: #e53e3e;
+      font-weight: 700;
+    }
+
+    .main-content .tagline p {
+      font-size: 1.2rem;
+      color: #4a5568;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .main-content .tagline .cta-button {
+      display: inline-block;
+      background: linear-gradient(to right, #2c5282, #3182ce);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .main-content .tagline .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      background: linear-gradient(to right, #2b6cb0, #4299e1);
+    }
+
+    /* Sections */
+    .section {
+      padding: 40px 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #fff, #f0f7ff);
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 2px 15px rgba(44, 82, 130, 0.08);
+      border: 1px solid #bee3f8;
+      animation: fadeInUp 0.6s ease-out;
+    }
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #2d3748;
+      position: relative;
+      display: inline-block;
+      font-weight: 600;
+    }
+    .section h2:after {
+      content: '';
+      display: block;
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(to right, #2c5282, #4299e1, #63b3ed);
+      margin: 8px auto;
+      border-radius: 2px;
+      opacity: 0.9;
+    }
+    .section p {
+      font-size: 15px;
+      max-width: 1200px;
+      margin: 0 auto 20px;
+      color: #4a5568;
+    }
+    .product-grid, .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card, .service-card {
+      background: linear-gradient(135deg, #ffffff, #f8fafc);
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(44, 82, 130, 0.1);
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+      position: relative;
+      overflow: hidden;
+    }
+    .product-card:before, .service-card:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(to right, #3182ce, #63b3ed);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .product-card:hover, .service-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(44, 82, 130, 0.1);
+      background: linear-gradient(135deg, #ffffff, #f0f7ff);
+      border-color: #90cdf4;
+    }
+    .product-card:hover:before, .service-card:hover:before {
+      opacity: 1;
+    }
+    .product-card a, .service-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+      padding: 5px;
+      border-radius: 8px;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+    .product-card:hover a, .service-card:hover a {
+      background-color: rgba(235, 244, 255, 0.5);
+    }
+    .product-card h3, .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #2c5282;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .product-card:hover h3, .service-card:hover h3 {
+      color: #2b6cb0;
+    }
+    .product-card p, .service-card p {
+      font-size: 14px;
+      color: #2d3748;
+      margin-bottom: 0;
+      line-height: 1.4;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      transition: all 0.3s ease;
+      padding: 5px;
+      background: rgba(235, 244, 255, 0.8);
+    }
+    .product-card:hover img {
+      transform: scale(1.03);
+      background: rgba(224, 242, 254, 0.9);
+    }
+
+    /* Contact Form */
+    #contact {
+      background: linear-gradient(135deg, #ebf8ff, #e6fffa);
+    }
+    #contact .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    #contact .contact-form label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #2d3748;
+    }
+    #contact .contact-form input,
+    #contact .contact-form select,
+    #contact .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #bee3f8;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.9);
+    }
+    #contact .contact-form input:focus,
+    #contact .contact-form select:focus,
+    #contact .contact-form textarea:focus {
+      outline: none;
+      border-color: #4299e1;
+      box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+      background: #ffffff;
+    }
+    #contact .contact-form button {
+      background: linear-gradient(to right, #2c5282, #3182ce);
+      color: #ffffff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+    #contact .contact-form button:hover {
+      background: linear-gradient(to right, #2b6cb0, #4299e1);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(44, 82, 130, 0.2);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, #1a365d, #2c5282);
+      color: #ffffff;
+      padding: 60px 0 30px;
+      margin-top: 40px;
+      box-shadow: 0 -2px 10px rgba(44, 82, 130, 0.1);
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .footer-section {
+      margin-bottom: 30px;
+    }
+
+    .footer-section h3 {
+      color: #ffffff;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .footer-section p, .footer-section li {
+      color: #cbd5e0;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li a {
+      color: #cbd5e0;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #90cdf4;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      color: #cbd5e0;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #ffffff;
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      margin-top: 30px;
+      border-top: 1px solid #4a5568;
+      color: #cbd5e0;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav ul li {
+        margin: 5px 0;
+      }
+      .dropdown {
+        position: static;
+        width: 100%;
+      }
+      .main-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 12px;
+        min-height: 160px;
+      }
+      .main-content .logo-left {
+        max-width: 35%;
+      }
+      .main-content .logo-right {
+        max-width: 25%;
+      }
+      .main-content .contact-info {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .main-content .tagline::before,
+      .main-content .tagline::after {
+        width: 40px;
+      }
+      .main-content .tagline::before {
+        left: -20px;
+      }
+      .main-content .tagline::after {
+        right: -20px;
+      }
+      .main-content .tagline .first-line {
+        font-size: 2.2rem;
+      }
+      .main-content .tagline .second-line {
+        font-size: 1.6rem;
+      }
+      .main-content .tagline p {
+        font-size: 1rem;
+      }
+      .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      header {
+        margin-top: 80px;
+        padding: 8px;
+      }
+      .main-content .contact-info {
+        font-size: 12px;
+        margin-bottom: 15px;
+      }
+      .scrolling-banner {
+        top: 35px;
+        padding: 5px 0;
+      }
+      .company-banner {
+        top: 60px;
+        padding: 5px 0;
+      }
+      .company-banner .company-name {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .footer-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Adjust the first section after home for smooth transition */
+    #products {
+      background: linear-gradient(135deg, #ebf4ff, #e6fffa);
+      margin-top: 15px;
+      padding-top: 20px;
+      scroll-margin-top: 100px;
+      border: 1px solid #bee3f8;
+      box-shadow: 0 2px 10px rgba(44, 82, 130, 0.08);
+    }
+
+    .product-card {
+      background: linear-gradient(135deg, #ebf8ff, #e6fffa);
+      border: 1px solid #bee3f8;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      background: linear-gradient(135deg, #e6fffa, #ebf8ff);
+      border-color: #90cdf4;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(44, 82, 130, 0.15);
+    }
+
+    .product-card:before {
+      background: linear-gradient(to right, #2c5282, #3182ce, #63b3ed);
+    }
+
+    .product-card h3 {
+      color: #2c5282;
+    }
+
+    .product-card:hover h3 {
+      color: #2b6cb0;
+    }
+
+    /* Scrolling Banner */
+    .scrolling-banner {
+      background: linear-gradient(135deg, #2d3748, #4a5568);
+      color: white;
+      padding: 6px 0;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 38px;
+      z-index: 98;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .scrolling-banner .marquee-item {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      opacity: 0;
+      transform: translateX(100%);
+      animation: slideInOut 4s ease;
+    }
+
+    .scrolling-banner .marquee-item.active {
+      display: flex;
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .scrolling-banner .marquee-item i {
+      margin-right: 12px;
+      color: #68d391;
+      font-size: 20px;
+    }
+
+    @keyframes slideInOut {
+      0% {
+        opacity: 0;
+        transform: translateX(50%);
+      }
+      20% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      80% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .scrolling-banner {
+        padding: 5px 0;
+        top: 35px;
+      }
+      .scrolling-banner .marquee-item {
+        font-size: 14px;
+      }
+      .scrolling-banner .marquee-item i {
+        font-size: 18px;
+      }
+    }
+
+    /* Company Name Banner */
+    .company-banner {
+      background: linear-gradient(135deg, #ebf4ff, #e6fffa);
+      padding: 6px 0;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 65px;
+      z-index: 97;
+      overflow: hidden;
+    }
+
+    .company-banner .company-name {
+      font-size: 20px;
+      font-weight: bold;
+      animation: 
+        scrollText 30s linear infinite,
+        colorChange 5s ease-in-out infinite;
+      white-space: nowrap;
+      display: inline-block;
+    }
+
+    @keyframes colorChange {
+      0% { color: #2c5282; } /* Royal Blue */
+      20% { color: #38a169; } /* Green */
+      40% { color: #805ad5; } /* Purple */
+      60% { color: #d53f8c; } /* Pink */
+      80% { color: #dd6b20; } /* Orange */
+      100% { color: #2c5282; } /* Back to Royal Blue */
+    }
+
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @media (max-width: 768px) {
+      .company-banner {
+        top: 60px;
+        padding: 5px 0;
+      }
+      .company-banner .company-name {
+        font-size: 16px;
+      }
+      header {
+        margin-top: 80px;
+        padding: 8px;
+      }
+    }
+
+    /* Services Section */
+    #services {
+      background: linear-gradient(135deg, #ebf4ff, #e6fffa);
+      scroll-margin-top: 150px;
+    }
+
+    /* Contact Section */
+    #contact {
+      scroll-margin-top: 150px;
+    }
+
+    /* Smooth Scroll Behavior */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Products Section */
+    .product-grid {
+      padding: 15px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Scrolling Banner -->
+  <div class="scrolling-banner">
+    <div class="marquee-item active">
+      <i class="fas fa-file-excel"></i>
+      PDF to Excel: A powerful tool for converting PDF bank statements to Excel
+    </div>
+    <div class="marquee-item">
+      <i class="fas fa-bridge"></i>
+      TallyBridge: Quick and effortless import of bank data to Tally
+    </div>
+    <div class="marquee-item">
+      <i class="fas fa-calculator"></i>
+      GST EasyMatch: Simplify your GST reconciliation process
+    </div>
+    <div class="marquee-item">
+      <i class="fas fa-building"></i>
+      Tally-Society Connect: Smart accounting for housing societies
+    </div>
+  </div>
+
+  <!-- Company Name Banner -->
+  <div class="company-banner">
+    <div class="company-name">
+      RIVEDA INFOSOFT - TRANSFORMING BUSINESSES WITH INNOVATIVE SOLUTIONS - TALLY & VBA EXPERTS
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li>
+        <a href="#products">Products</a>
+        <div class="dropdown">
+          <a href="pages/pdf-to-excel.html">PDF to Excel</a>
+          <a href="pages/gst-easymatch.html">GST EasyMatch</a>
+          <a href="pages/tallybridge.html">TallyBridge</a>
+          <a href="pages/tally-society-connect.html">Tally-Society Connect</a>
+        </div>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+        <div class="dropdown">
+          <a href="pages/tally-license.html">Tally License</a>
+          <a href="pages/tally-customizations.html">Tally Customizations</a>
+          <a href="pages/accounting-taxation.html">Accounting & Taxation</a>
+          <a href="pages/tally-integration.html">Tally Integration</a>
+        </div>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="contact-info">
+      <a href="tel:+919490128503"><i class="fas fa-phone-alt"></i> +91 9490128503</a>
+      <a href="mailto:info@rivedainfosoft.com"><i class="fas fa-envelope"></i> info@rivedainfosoft.com</a>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="main-content">
+    <div class="logo-left">
+      <img src="images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
+      <div class="contact-info">
+        <div><i class="fas fa-phone-alt"></i> +91 9490128503</div>
+        <div><a href="mailto:info@rivedainfosoft.com"><i class="fas fa-envelope"></i> info@rivedainfosoft.com</a></div>
+      </div>
+    </div>
+    <div class="tagline">
+      <div class="first-line">Transform Your Organisation</div>
+      <div class="second-line">with <span class="highlight">Smart Solutions</span></div>
+    </div>
+    <div class="logo-right">
+      <img src="images/TallyLogowithTrademark_fY0nPqW.png" alt="Tally Solutions Image">
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="section">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div id="pdf-excel" class="product-card">
+        <a href="pages/pdf-to-excel.html">
+          <img src="images/pdf to excel logo no bckgrd.PNG" alt="PDF to Excel Converter">
+          <h3>PDF to Excel Converter</h3>
+          <p>Convert PDF bank statements and financial documents into Excel for seamless Tally integration.</p>
+        </a>
+      </div>
+      <div id="gst-reconciliation" class="product-card">
+        <a href="pages/gst-easymatch.html">
+          <img src="images/gst reco.png" alt="GST EasyMatch">
+          <h3>GST EasyMatch</h3>
+          <p>Simplify Manual GST Reconciliation with Smart Matching Tools</p>
+        </a>
+      </div>
+      <div id="smart-bank" class="product-card">
+        <a href="pages/tallybridge.html">
+          <img src="images/smart bank import.png" alt="TallyBridge">
+          <h3>TallyBridge</h3>
+          <p>Seamlessly Connect Bank Statements to Tally</p>
+        </a>
+      </div>
+      <div id="housing-society" class="product-card">
+        <a href="pages/tally-society-connect.html">
+          <img src="images/hs new.jpg" alt="Tally-Society Connect">
+          <h3>Tally-Society Connect</h3>
+          <p>Smart Accounting for Smarter Societies</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div id="tally-license" class="service-card">
+        <a href="pages/tally-license.html">
+          <h3>Tally License & Renewals</h3>
+          <p>Assistance with Tally software licensing and renewal services for seamless operations.</p>
+        </a>
+      </div>
+      <div id="tally-customizations" class="service-card">
+        <a href="pages/tally-customizations.html">
+          <h3>Tally Customizations</h3>
+          <p>Custom invoice and report solutions tailored to your business needs in Tally.</p>
+        </a>
+      </div>
+      <div id="accounting-taxation" class="service-card">
+        <a href="pages/accounting-taxation.html">
+          <h3>Accounting & Taxation</h3>
+          <p>Expert accounting and taxation support to ensure compliance and efficiency.</p>
+        </a>
+      </div>
+      <div id="tally-integration" class="service-card">
+        <a href="pages/tally-integration.html">
+          <h3>Tally Integration</h3>
+          <p>Seamless integration of Tally with other business systems and applications for enhanced workflow efficiency.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formsubmit.co/info@rivedainfosoft.com" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="pages/about-us.html">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="pages/pdf-to-excel.html">PDF to Excel Converter</a></li>
+          <li><a href="pages/gst-easymatch.html">GST EasyMatch</a></li>
+          <li><a href="pages/tallybridge.html">TallyBridge</a></li>
+          <li><a href="pages/tally-society-connect.html">Tally-Society Connect</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Business Hours</h3>
+        <ul>
+          <li>Monday-Friday: 10:00-18:00</li>
+          <li>Saturday: 10:00-16:00</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Info</h3>
+        <ul>
+          <li>WhatsApp: +91 9490128503</li>
+          <li>Email: info@rivedainfosoft.com</li>
+          <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="pages/terms-of-use.html">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Add Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script>
+    // Smooth Scrolling with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+
+        // Update active class for navigation
+        document.querySelectorAll('nav ul li a').forEach(link => {
+          link.classList.remove('active');
+        });
+        this.classList.add('active');
+      });
+    });
+
+    // Form Submission Confirmation
+    document.querySelector('.contact-form').addEventListener('submit', function() {
+      alert('Thank you for your message! We will get back to you soon.');
+    });
+
+    // Product rotation script
+    function rotateProducts() {
+      const items = document.querySelectorAll('.marquee-item');
+      let currentIndex = 0;
+
+      setInterval(() => {
+        items[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % items.length;
+        items[currentIndex].classList.add('active');
+      }, 4000);
+    }
+
+    // Start rotation when page loads
+    window.addEventListener('load', rotateProducts);
+  </script>
+</body>
+</html>

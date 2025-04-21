@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Us - Riveda Infosoft">
+    <title>About Us - Riveda Infosoft</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background-color: #f5f7fa;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header img {
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            background-color: #2c5282;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav a:hover {
+            background-color: #4299e1;
+        }
+
+        .content-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c5282, #4299e1);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .about-header h1 {
+            margin-bottom: 15px;
+        }
+
+        .about-section {
+            margin: 40px 0;
+            padding: 0 20px;
+        }
+
+        .about-section h2 {
+            color: #2c5282;
+            margin-bottom: 20px;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .about-card {
+            background-color: #f8fafc;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 4px solid #2c5282;
+            transition: transform 0.3s;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .about-card h3 {
+            color: #2c5282;
+            margin-bottom: 15px;
+        }
+
+        .mission-vision {
+            background: linear-gradient(135deg, #f8fafc, #edf2f7);
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+
+        .footer {
+            background-color: #2d3748;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            color: #cbd5e0;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content-container {
+                margin: 20px;
+            }
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #003087;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+            text-align: left;
+        }
+
+        .back-button:hover {
+            color: #004299;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .logo-section {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-section img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .nav-menu {
+            background: #003087;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0 25px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="../images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
+    </div>
+    
+    <nav class="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="about-content">
+        <div class="container">
+            <a href="../index.html" class="back-button">← Back to Home</a>
+
+            <div class="content-container">
+                <div class="about-header">
+                    <h1>About Riveda Infosoft</h1>
+                    <p>Empowering SMEs with Innovative Solutions Since 2015</p>
+                </div>
+
+                <section class="about-section">
+                    <h2>Who We Are</h2>
+                    <p>Riveda Infosoft is a trusted provider of Tally TDL and VBA solutions, dedicated to transforming the way businesses handle their financial operations. With years of expertise in financial automation, we specialize in creating custom modules and converters to streamline business operations.</p>
+                    
+                    <div class="mission-vision">
+                        <h2>Our Mission</h2>
+                        <p>To deliver simplicity and efficiency to our clients across India through innovative financial solutions and exceptional service.</p>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-card">
+                            <h3>Expertise</h3>
+                            <p>Our team of experienced professionals specializes in:</p>
+                            <ul>
+                                <li>Tally Customization</li>
+                                <li>Financial Automation</li>
+                                <li>Business Process Optimization</li>
+                                <li>Custom Software Solutions</li>
+                            </ul>
+                        </div>
+                        <div class="about-card">
+                            <h3>Our Approach</h3>
+                            <p>We focus on:</p>
+                            <ul>
+                                <li>Understanding client needs</li>
+                                <li>Delivering tailored solutions</li>
+                                <li>Ensuring customer satisfaction</li>
+                                <li>Providing ongoing support</li>
+                            </ul>
+                        </div>
+                        <div class="about-card">
+                            <h3>Our Impact</h3>
+                            <p>We help businesses:</p>
+                            <ul>
+                                <li>Automate repetitive tasks</li>
+                                <li>Enhance accuracy</li>
+                                <li>Improve efficiency</li>
+                                <li>Save time and resources</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <a href="../index.html" class="back-button" style="margin-top: 20px;">← Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#products">Products</a></li>
+                    <li><a href="../index.html#services">Services</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="../index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="pdf-to-excel.html">PDF to Excel Converter</a></li>
+                    <li><a href="gst-easymatch.html">GST EasyMatch</a></li>
+                    <li><a href="tallybridge.html">TallyBridge</a></li>
+                    <li><a href="tally-society-connect.html">Tally-Society Connect</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>WhatsApp: +91 9490128503</li>
+                    <li>Email: info@rivedainfosoft.com</li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="terms-of-use.html">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

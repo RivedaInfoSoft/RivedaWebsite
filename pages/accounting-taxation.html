@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accounting & Taxation Services - Professional financial services">
+    <title>Accounting & Taxation - Riveda Infosoft</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+        }
+
+        .logo-section {
+            background: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-section img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        .nav-menu {
+            background: #003087;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            padding: 0 25px;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .title-section {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .title-section h1 {
+            color: #003087;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .title-section p {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .content-section {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            color: #003087;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .content-section p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-left: 4px solid #003087;
+        }
+
+        .feature-card h3 {
+            color: #003087;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .benefits-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .benefits-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: #666;
+        }
+
+        .benefits-list li:before {
+            content: '✓';
+            color: #003087;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-block;
+            color: #003087;
+            text-decoration: none;
+            margin-bottom: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+            text-align: left;
+        }
+
+        .back-button:hover {
+            color: #004299;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #003087;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #004299;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu a {
+                padding: 0 15px;
+                font-size: 14px;
+            }
+
+            .container {
+                padding: 0 15px;
+                margin: 20px auto;
+            }
+
+            .title-section h1 {
+                font-size: 2em;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-section">
+        <img src="../images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
+    </div>
+
+    <div class="nav-menu">
+        <a href="../index.html">Home</a>
+        <a href="#features">Features</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <a href="../index.html" class="back-button">← Back to Home</a>
+
+        <div class="title-section">
+            <h1>Accounting & Taxation</h1>
+            <p>Professional financial services for your business</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Overview</h2>
+            <p>Our comprehensive accounting and taxation services ensure your business stays compliant and efficient. We provide expert guidance and support for all your financial needs.</p>
+        </div>
+
+        <div id="features" class="content-section">
+            <h2>Our Services</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Bookkeeping</h3>
+                    <p>Accurate and timely maintenance of your financial records.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tax Planning</h3>
+                    <p>Strategic tax planning to optimize your tax position.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Compliance</h3>
+                    <p>Ensure adherence to all regulatory requirements.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="benefits" class="content-section">
+            <h2>Key Features</h2>
+            <ul class="benefits-list">
+                <li>Monthly bookkeeping services</li>
+                <li>Annual financial statements</li>
+                <li>Tax return preparation</li>
+                <li>GST compliance</li>
+                <li>Business advisory services</li>
+                <li>Audit support</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Benefits</h2>
+            <ul class="benefits-list">
+                <li>Expert financial guidance</li>
+                <li>Time-saving solutions</li>
+                <li>Reduced compliance risks</li>
+                <li>Optimized tax planning</li>
+                <li>Improved financial visibility</li>
+                <li>Peace of mind</li>
+            </ul>
+        </div>
+
+        <div id="contact" class="content-section">
+            <h2>Get Started</h2>
+            <p>Ready to streamline your financial operations? Contact us to discuss your requirements.</p>
+            <a href="../index.html#contact" class="cta-button">Contact Us</a>
+        </div>
+
+        <a href="../index.html" class="back-button" style="margin-top: 20px;">← Back to Home</a>
+    </div>
+</body>
+</html> 
