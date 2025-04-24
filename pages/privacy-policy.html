@@ -1,194 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy - Riveda Infosoft">
-    <title>Privacy Policy - Riveda Infosoft</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <style>
-        .privacy-content {
-            max-width: 1200px;
-            margin: 120px auto 40px;
-            padding: 20px;
-            background: linear-gradient(135deg, #ffffff, #f0f7ff);
-            border-radius: 10px;
-            box-shadow: 0 2px 15px rgba(44, 82, 130, 0.08);
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy - Riveda Infosoft">
+  <title>Privacy Policy - Riveda Infosoft</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background: #152238;
+      padding: 8px 0;
+      margin: 0;
+    }
 
-        .privacy-content h1 {
-            color: #2c5282;
-            margin-bottom: 30px;
-            text-align: center;
-            font-size: 2.5rem;
-        }
+    .color-changing-text {
+      display: inline-block;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: marquee 30s linear infinite, colorChange 12s linear infinite;
+    }
 
-        .privacy-content h2 {
-            color: #2c5282;
-            margin: 25px 0 15px;
-            font-size: 1.8rem;
-        }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
 
-        .privacy-content p {
-            margin-bottom: 15px;
-            line-height: 1.6;
-            color: #4a5568;
-        }
-
-        .privacy-content ul {
-            margin: 15px 0;
-            padding-left: 20px;
-        }
-
-        .privacy-content li {
-            margin-bottom: 10px;
-            line-height: 1.6;
-            color: #4a5568;
-        }
-
-        .last-updated {
-            text-align: right;
-            font-style: italic;
-            color: #718096;
-            margin-top: 30px;
-        }
-
-        @media (max-width: 768px) {
-            .privacy-content {
-                margin: 100px 15px 30px;
-                padding: 15px;
-            }
-
-            .privacy-content h1 {
-                font-size: 2rem;
-            }
-
-            .privacy-content h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+    @keyframes colorChange {
+      0%, 100% { color: #ffffff; }
+      25% { color: #ffc107; }
+      50% { color: #28a745; }
+      75% { color: #17a2b8; }
+    }
+  </style>
 </head>
 <body>
-    <div class="logo-section">
-        <img src="../images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
-    </div>
-
-    <nav class="nav-menu">
-        <a href="../index.html">Home</a>
-        <a href="#privacy-policy">Privacy Policy</a>
-        <a href="terms-of-use.html">Terms of Use</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container">
-        <a href="../index.html" class="back-button">← Back to Home</a>
-
-        <div class="privacy-content">
-            <h1>Privacy Policy</h1>
-            
-            <p>At Riveda Infosoft, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
-
-            <h2>Information We Collect</h2>
-            <ul>
-                <li>Personal Information: Name, email address, phone number, and company details when you contact us or use our services</li>
-                <li>Usage Data: Information about how you use our website and services</li>
-                <li>Technical Data: IP address, browser type, device information, and cookies</li>
-                <li>Financial Information: Payment details when purchasing our products or services</li>
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/logo-transparent-png.webp" alt="Riveda Infosoft Logo" class="logo-img" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pdf-to-excel.html">PDF to Excel Converter</a></li>
+              <li><a class="dropdown-item" href="gst-easymatch.html">GST EasyMatch</a></li>
+              <li><a class="dropdown-item" href="tallybridge.html">TallyBridge</a></li>
+              <li><a class="dropdown-item" href="tally-society-connect.html">Tally-Society Connect</a></li>
             </ul>
-
-            <h2>How We Use Your Information</h2>
-            <ul>
-                <li>To provide and maintain our services</li>
-                <li>To notify you about changes to our services</li>
-                <li>To provide customer support</li>
-                <li>To gather analysis or valuable information to improve our services</li>
-                <li>To monitor the usage of our services</li>
-                <li>To detect, prevent and address technical issues</li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tally-license.html">Tally License & Renewals</a></li>
+              <li><a class="dropdown-item" href="tally-customizations.html">Tally Customizations</a></li>
+              <li><a class="dropdown-item" href="accounting-taxation.html">Accounting & Taxation</a></li>
+              <li><a class="dropdown-item" href="tally-integration.html">Tally Integration</a></li>
             </ul>
-
-            <h2>Data Security</h2>
-            <p>We implement appropriate technical and organizational security measures to protect your personal information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
-
-            <h2>Your Rights</h2>
-            <ul>
-                <li>Access your personal data</li>
-                <li>Correct inaccurate data</li>
-                <li>Request deletion of your data</li>
-                <li>Object to processing of your data</li>
-                <li>Data portability</li>
-            </ul>
-
-            <h2>Cookies</h2>
-            <p>We use cookies and similar tracking technologies to track activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent.</p>
-
-            <h2>Third-Party Services</h2>
-            <p>We may employ third-party companies and individuals to facilitate our services, provide services on our behalf, or assist us in analyzing how our services are used.</p>
-
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
-
-            <h2>Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy, please contact us:</p>
-            <ul>
-                <li>By email: info@rivedainfosoft.com</li>
-                <li>By phone: +91 9490128503</li>
-            </ul>
-
-            <p class="last-updated">Last Updated: April 21, 2024</p>
-        </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#products">Products</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="index.html#contact">Contact Us</a></li>
-                </ul>
-            </div>
+  <div class="marquee-container">
+    <div class="color-changing-text">
+      RIVEDA INFOSOFT - TRANSFORMING BUSINESSES WITH INNOVATIVE SOLUTIONS - TALLY AND VBA EXPERTS
+    </div>
+  </div>
 
-            <div class="footer-section">
-                <h3>Products</h3>
-                <ul>
-                    <li><a href="pdf-to-excel.html">PDF to Excel Converter</a></li>
-                    <li><a href="gst-easymatch.html">GST EasyMatch</a></li>
-                    <li><a href="tallybridge.html">TallyBridge</a></li>
-                    <li><a href="tally-society-connect.html">Tally-Society Connect</a></li>
-                </ul>
-            </div>
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <div class="container">
+      <a href="../index.html" class="btn btn-outline-primary">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+    </div>
+  </div>
 
-            <div class="footer-section">
-                <h3>Business Hours</h3>
-                <ul>
-                    <li>Monday-Friday: 10:00-18:00</li>
-                    <li>Saturday: 10:00-16:00</li>
-                    <li>Sunday: Closed</li>
-                </ul>
-            </div>
+  <section class="py-5">
+    <div class="container">
+      <h1 class="mb-4">Privacy Policy</h1>
+      <div class="privacy-content">
+        <p class="lead mb-4">Last updated: March 2024</p>
 
-            <div class="footer-section">
-                <h3>Contact Info</h3>
-                <ul>
-                    <li>WhatsApp: +91 9490128503</li>
-                    <li>Email: info@rivedainfosoft.com</li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="terms-of-use.html">Terms of Use</a></li>
-                </ul>
-            </div>
+        <h2 class="h4 mb-3">1. Information We Collect</h2>
+        <p>At Riveda Infosoft, we collect information to provide better services to our users. The types of information we collect include:</p>
+        <ul class="mb-4">
+          <li>Contact information (name, email address, phone number)</li>
+          <li>Business information for service delivery</li>
+          <li>Usage data from our products and services</li>
+          <li>Technical information for product improvement</li>
+        </ul>
+
+        <h2 class="h4 mb-3">2. How We Use Your Information</h2>
+        <p>We use the collected information for:</p>
+        <ul class="mb-4">
+          <li>Providing and maintaining our services</li>
+          <li>Improving our products and customer experience</li>
+          <li>Communicating with you about our services</li>
+          <li>Sending important updates and notifications</li>
+          <li>Technical support and troubleshooting</li>
+        </ul>
+
+        <h2 class="h4 mb-3">3. Data Security</h2>
+        <p>We implement appropriate security measures to protect your information:</p>
+        <ul class="mb-4">
+          <li>Encryption of sensitive data</li>
+          <li>Secure data storage systems</li>
+          <li>Regular security audits</li>
+          <li>Access controls and authentication</li>
+        </ul>
+
+        <h2 class="h4 mb-3">4. Data Sharing</h2>
+        <p>We do not sell your personal information. We may share your information with:</p>
+        <ul class="mb-4">
+          <li>Service providers who assist in our operations</li>
+          <li>Legal authorities when required by law</li>
+          <li>Business partners with your consent</li>
+        </ul>
+
+        <h2 class="h4 mb-3">5. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul class="mb-4">
+          <li>Access your personal information</li>
+          <li>Correct inaccurate information</li>
+          <li>Request deletion of your information</li>
+          <li>Opt-out of marketing communications</li>
+        </ul>
+
+        <h2 class="h4 mb-3">6. Contact Us</h2>
+        <p>If you have any questions about our Privacy Policy, please contact us:</p>
+        <ul class="mb-4">
+          <li>Email: info@rivedaindosoft.com</li>
+          <li>WhatsApp: +91 9490128503</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4" style="background-color: #152238;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="../index.html#products" class="text-white text-decoration-none">Products</a></li>
+            <li><a href="../index.html#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="about-us.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+          </ul>
         </div>
-
-        <div class="copyright">
-            <p>© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Services</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="tally-license.html" class="text-white text-decoration-none">Tally License & Renewals</a></li>
+            <li><a href="tally-customizations.html" class="text-white text-decoration-none">Tally Customizations</a></li>
+            <li><a href="accounting-taxation.html" class="text-white text-decoration-none">Accounting & Taxation</a></li>
+            <li><a href="tally-integration.html" class="text-white text-decoration-none">Tally Integration</a></li>
+          </ul>
         </div>
-    </footer>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Products</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="pdf-to-excel.html" class="text-white text-decoration-none">PDF to Excel Converter</a></li>
+            <li><a href="gst-easymatch.html" class="text-white text-decoration-none">GST EasyMatch</a></li>
+            <li><a href="tallybridge.html" class="text-white text-decoration-none">TallyBridge</a></li>
+            <li><a href="tally-society-connect.html" class="text-white text-decoration-none">Tally-Society Connect</a></li>
+            <li><a href="school-college-soft.html" class="text-white text-decoration-none">School/College Soft</a></li>
+            <li><a href="chitfund-soft.html" class="text-white text-decoration-none">Chitfund Soft</a></li>
+            <li><a href="tally-auto-backup.html" class="text-white text-decoration-none">Tally Auto Backup</a></li>
+            <li><a href="advanced-document-manager.html" class="text-white text-decoration-none">Advanced Document Manager</a></li>
+            <li><a href="tally-hospital-module.html" class="text-white text-decoration-none">Tally Hospital Module</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Contact Info</h5>
+          <ul class="list-unstyled text-start">
+            <li class="text-white">WhatsApp: +91 9490128503</li>
+            <li><a href="mailto:info@rivedaindosoft.com" class="text-white text-decoration-none">Email: info@rivedaindosoft.com</a></li>
+            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" class="text-white text-decoration-none">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-3 text-white text-center">© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Add Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Back to Home Button -->
+  <a href="../index.html" class="back-to-home">
+    <i class="fas fa-home"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
 </body>
-</html> 
+</html>
