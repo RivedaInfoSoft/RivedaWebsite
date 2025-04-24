@@ -1,291 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tally License & Renewals - Riveda Infosoft</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', Arial, sans-serif;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tally License & Renewals - Professional assistance with Tally software licensing and renewal services">
+  <title>Tally License & Renewals - Riveda Infosoft</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      background: #152238;
+      padding: 8px 0;
+      margin: 0;
+    }
 
-        body {
-            background: #f0f2f5;
-        }
+    .color-changing-text {
+      display: inline-block;
+      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      letter-spacing: 0.5px;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: marquee 30s linear infinite, colorChange 12s linear infinite;
+    }
 
-        .logo-section {
-            background: #fff;
-            padding: 20px;
-            text-align: center;
-        }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
 
-        .logo-section img {
-            max-width: 300px;
-            height: auto;
-        }
+    @keyframes colorChange {
+      0%, 100% { color: #ffffff; }
+      25% { color: #ffc107; }
+      50% { color: #28a745; }
+      75% { color: #17a2b8; }
+    }
 
-        .nav-menu {
-            background: #003087;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .nav-menu a {
-            color: white;
-            text-decoration: none;
-            padding: 0 25px;
-            font-size: 16px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-            position: relative;
-        }
-
-        .title-section {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .title-section h1 {
-            color: #003087;
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-
-        .title-section p {
-            color: #666;
-            font-size: 1.2em;
-        }
-
-        .services-heading {
-            color: #333;
-            margin-bottom: 30px;
-            font-size: 1.8em;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: #fff;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-left: 4px solid #003087;
-        }
-
-        .service-card h3 {
-            color: #003087;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-
-        .service-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        @media (max-width: 768px) {
-            .nav-menu a {
-                padding: 0 15px;
-                font-size: 14px;
-            }
-
-            .container {
-                padding: 0 15px;
-                margin: 20px auto;
-            }
-
-            .title-section h1 {
-                font-size: 2em;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .back-button {
-            display: inline-block;
-            color: #003087;
-            text-decoration: none;
-            margin-bottom: 20px;
-            font-weight: 500;
-            transition: color 0.3s;
-            text-align: left;
-        }
-
-        .back-button:hover {
-            color: #004299;
-        }
-
-        .about-section {
-            background: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .about-section h2 {
-            color: #003087;
-            margin-bottom: 20px;
-            font-size: 1.8em;
-        }
-
-        .about-section p {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .about-card {
-            background: #f8fafc;
-            padding: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #003087;
-        }
-
-        .about-card h3 {
-            color: #003087;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-
-        .about-card p {
-            margin-bottom: 0;
-        }
-
-        .footer {
-            background: #003087;
-            color: white;
-            padding: 40px 0;
-        }
-
-        .footer-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .footer-section h3 {
-            font-size: 1.8em;
-            margin-bottom: 20px;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section ul li a {
-            color: white;
-            text-decoration: none;
-        }
-    </style>
+    #features, #benefits {
+      scroll-margin-top: 100px;
+      scroll-behavior: smooth;
+      padding-top: 80px;
+    }
+  </style>
 </head>
 <body>
-    <div class="logo-section">
-        <img src="../images/logo-transparent-png.png" alt="Riveda Infosoft Logo">
-    </div>
-
-    <div class="nav-menu">
-        <a href="../index.html">Home</a>
-        <a href="#features">Features</a>
-        <a href="#benefits">Benefits</a>
-        <a href="#contact">Contact</a>
-    </div>
-
+  <nav class="navbar navbar-expand-lg bg-light sticky-top">
     <div class="container">
-        <a href="../index.html" class="back-button">← Back to Home</a>
-
-        <div class="title-section">
-            <h1>Tally License & Renewals</h1>
-            <p>Authorized Tally Partner providing genuine Tally software licenses and hassle-free renewals</p>
-        </div>
-
-        <h2 class="services-heading">Our Services Include</h2>
-
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>New License Purchase</h3>
-                <p>Get genuine Tally.ERP 9 licenses with official documentation and support</p>
-            </div>
-
-            <div class="service-card">
-                <h3>License Renewals</h3>
-                <p>Quick and easy renewal process for existing Tally software licenses</p>
-            </div>
-
-            <div class="service-card">
-                <h3>Multi-User Setup</h3>
-                <p>Configure and set up multi-user environments with proper licensing</p>
-            </div>
-
-            <div class="service-card">
-                <h3>License Management</h3>
-                <p>Help with license transfers, reactivations, and configurations</p>
-            </div>
-        </div>
-
-        <div id="about" class="about-section">
-            <h2>About Us</h2>
-            <p>Riveda Infosoft is a leading provider of Tally solutions and services, dedicated to empowering businesses with innovative technology solutions.</p>
-            
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Our Mission</h3>
-                    <p>To provide cutting-edge business solutions that enhance efficiency and drive growth for our clients.</p>
-                </div>
-                <div class="about-card">
-                    <h3>Our Expertise</h3>
-                    <p>With years of experience in Tally solutions, we offer comprehensive services tailored to your business needs.</p>
-                </div>
-                <div class="about-card">
-                    <h3>Our Commitment</h3>
-                    <p>We are committed to delivering excellence through innovative solutions and exceptional customer service.</p>
-                </div>
-            </div>
-        </div>
-
-        <a href="../index.html" class="back-button" style="margin-top: 20px;">← Back to Home</a>
-    </div>
-
-    <footer class="footer">
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#products">Products</a></li>
-          <li><a href="../index.html#services">Services</a></li>
-          <li><a href="../index.html#about">About Us</a></li>
-          <li><a href="../index.html#contact">Contact Us</a></li>
+      <a class="navbar-brand" href="../index.html">
+        <img src="../images/logo-transparent-png.webp" alt="Riveda Infosoft Logo" class="logo-img" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pdf-to-excel.html">PDF to Excel Converter</a></li>
+              <li><a class="dropdown-item" href="gst-easymatch.html">GST EasyMatch</a></li>
+              <li><a class="dropdown-item" href="tallybridge.html">TallyBridge</a></li>
+              <li><a class="dropdown-item" href="tally-society-connect.html">Tally-Society Connect</a></li>
+              <li><a class="dropdown-item" href="school-college-soft.html">School/College Soft</a></li>
+              <li><a class="dropdown-item" href="chitfund-soft.html">Chitfund Soft</a></li>
+              <li><a class="dropdown-item" href="tally-auto-backup.html">Tally Auto Backup</a></li>
+              <li><a class="dropdown-item" href="advanced-document-manager.html">Advanced Document Manager</a></li>
+              <li><a class="dropdown-item" href="tally-hospital-module.html">Tally Hospital Module</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item active" href="tally-license.html">Tally License & Renewals</a></li>
+              <li><a class="dropdown-item" href="tally-customizations.html">Tally Customizations</a></li>
+              <li><a class="dropdown-item" href="accounting-taxation.html">Accounting & Taxation</a></li>
+              <li><a class="dropdown-item" href="tally-integration.html">Tally Integration</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
         </ul>
       </div>
-    </footer>
+    </div>
+  </nav>
+
+  <div class="marquee-container">
+    <div class="color-changing-text">
+      RIVEDA INFOSOFT - TRANSFORMING BUSINESSES WITH INNOVATIVE SOLUTIONS - TALLY AND VBA EXPERTS
+    </div>
   </div>
+
+  <!-- Page Navigation -->
+  <div class="page-nav">
+    <div class="container">
+      <a href="../index.html" class="btn btn-outline-primary">
+        <i class="fas fa-arrow-left"></i> Back to Home
+      </a>
+      <div class="page-nav-links">
+        <a href="#features" class="active">Features</a>
+        <a href="#benefits">Benefits</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="product-hero py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h1>Tally License & Renewals</h1>
+          <p class="lead">Professional assistance with Tally software licensing and renewal services</p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="../index.html#contact" class="btn btn-primary">Get Started</a>
+            <a href="#features" class="btn btn-outline-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img src="../images/TallyLogowithTrademark_fY0nPqW.webp" alt="Tally License & Renewals" class="img-fluid product-image" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Features</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-key"></i>
+            </div>
+            <h3>License Management</h3>
+            <p>Complete assistance with Tally license procurement and activation.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-sync"></i>
+            </div>
+            <h3>Renewal Services</h3>
+            <p>Timely renewal of Tally licenses to ensure uninterrupted operations.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3>Technical Support</h3>
+            <p>Expert technical support for license-related issues and queries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Benefits</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="benefit-card">
+            <h3><i class="fas fa-check-circle"></i> Hassle-free</h3>
+            <p>No need to worry about license management - we handle everything for you.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="benefit-card">
+            <h3><i class="fas fa-clock"></i> Time Saving</h3>
+            <p>Save time with our efficient license procurement and renewal process.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="benefit-card">
+            <h3><i class="fas fa-shield-alt"></i> Compliance</h3>
+            <p>Ensure compliance with Tally licensing requirements and regulations.</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="benefit-card">
+            <h3><i class="fas fa-headset"></i> Support</h3>
+            <p>Get expert support for all your Tally license-related queries.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section py-5 bg-primary text-white">
+    <div class="container text-center">
+      <h2>Need help with your Tally license?</h2>
+      <p class="lead">Contact us for professional license management services!</p>
+      <a href="../index.html#contact" class="btn btn-light btn-lg mt-3">Contact Us</a>
+    </div>
+  </section>
+
+  <footer class="py-4" style="background-color: #152238;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="../index.html#products" class="text-white text-decoration-none">Products</a></li>
+            <li><a href="../index.html#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="about-us.html" class="text-white text-decoration-none">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Services</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="tally-license.html" class="text-white text-decoration-none">Tally License & Renewals</a></li>
+            <li><a href="tally-customizations.html" class="text-white text-decoration-none">Tally Customizations</a></li>
+            <li><a href="accounting-taxation.html" class="text-white text-decoration-none">Accounting & Taxation</a></li>
+            <li><a href="tally-integration.html" class="text-white text-decoration-none">Tally Integration</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Products</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="pdf-to-excel.html" class="text-white text-decoration-none">PDF to Excel Converter</a></li>
+            <li><a href="gst-easymatch.html" class="text-white text-decoration-none">GST EasyMatch</a></li>
+            <li><a href="tallybridge.html" class="text-white text-decoration-none">TallyBridge</a></li>
+            <li><a href="tally-society-connect.html" class="text-white text-decoration-none">Tally-Society Connect</a></li>
+            <li><a href="school-college-soft.html" class="text-white text-decoration-none">School/College Soft</a></li>
+            <li><a href="chitfund-soft.html" class="text-white text-decoration-none">Chitfund Soft</a></li>
+            <li><a href="tally-auto-backup.html" class="text-white text-decoration-none">Tally Auto Backup</a></li>
+            <li><a href="advanced-document-manager.html" class="text-white text-decoration-none">Advanced Document Manager</a></li>
+            <li><a href="tally-hospital-module.html" class="text-white text-decoration-none">Tally Hospital Module</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5 class="text-white mb-3">Contact Info</h5>
+          <ul class="list-unstyled text-start">
+            <li class="text-white">WhatsApp: +91 9490128503</li>
+            <li><a href="mailto:info@rivedaindosoft.com" class="text-white text-decoration-none">Email: info@rivedaindosoft.com</a></li>
+            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" class="text-white text-decoration-none">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-3 text-white text-center">© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Home Button -->
+  <a href="../index.html" class="back-to-home">
+    <i class="fas fa-home"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
 </body>
-</html> 
+</html>
