@@ -107,4 +107,4 @@ The website is regularly updated with:
 
 For any queries or support:
 - WhatsApp: +91 9490128503
-- Email: info@rivedaindosoft.com
+- Email: info@rivedainfosoft.com
