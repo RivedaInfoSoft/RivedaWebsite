@@ -65,6 +65,7 @@ Welcome to the official repository of the Riveda Infosoft website. This reposito
 3. Open index.html in your browser to view the website locally
 
 4. For deployment, upload all files to your web hosting server maintaining the directory structure
+5. Ensure `404.html` remains at the project root so your hosting platform can serve it for unknown paths (GitHub Pages does this automatically)
 
 ## 📁 Project Structure
 
