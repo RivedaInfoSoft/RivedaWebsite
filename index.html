@@ -27,18 +27,48 @@
     @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
     @keyframes colorChange { 0%,100%{color:white;} 25%{color:#ffc107;} 50%{color:#28a745;} 75%{color:#17a2b8;} }
 
-    .navbar { background:#0072bc !important; }
+    .navbar { background:#0072bc !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .navbar .nav-link { color:white !important; font-weight:500; }
     .navbar .nav-link:hover { color:#ffd700 !important; }
 
-    .navbar-brand-section { width:300px; overflow:hidden; }
-    .navbar-messages-container { height:24px; position:relative; overflow:hidden; }
-    .navbar-message { position:absolute; width:100%; color:white; opacity:0; }
+    /* NAVBAR LOGO + MESSAGES FIX */
+    .navbar-brand-section { 
+      display: flex; 
+      align-items: center; 
+      width: 380px; 
+      margin-right: 20px; 
+      overflow: hidden; 
+    }
+    .navbar-brand { 
+      flex-shrink: 0; 
+      margin-right: 15px; 
+    }
+    .navbar-brand img { 
+      height: 32px; 
+      width: auto; 
+      border-radius: 4px; 
+      transition: transform 0.2s ease; 
+    }
+    .navbar-brand:hover img { transform: scale(1.05); }
+    
+    .navbar-messages-container { 
+      height:24px; 
+      position:relative; 
+      overflow:hidden; 
+      flex-grow: 1; 
+    }
+    .navbar-message { position:absolute; width:100%; color:white; opacity:0; font-size: 14px; }
     @keyframes fadeMessage {0%,100%{opacity:0;} 3%,22%{opacity:1;} 25%{opacity:0;} }
     #navMessage1 { animation: fadeMessage 16s infinite 0s; }
     #navMessage2 { animation: fadeMessage 16s infinite 4s; }
     #navMessage3 { animation: fadeMessage 16s infinite 8s; }
     #navMessage4 { animation: fadeMessage 16s infinite 12s; }
+
+    /* MOBILE FIXES */
+    @media (max-width: 768px) {
+      .marquee-container { display: none; }
+      .navbar-brand-section { width: 250px; }
+    }
   </style>
 
 </head>
@@ -48,7 +78,13 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
 
+      <!-- NAVBAR LOGO + MESSAGES (FIXED) -->
       <div class="navbar-brand-section">
+        <!-- ✅ LOGO ADDED HERE -->
+        <a href="/" class="navbar-brand d-none d-md-flex">
+          <img src="images/logo-transparent-png.webp" alt="Riveda Infosoft" loading="lazy">
+        </a>
+        
         <div class="navbar-messages-container">
           <div id="navMessage1" class="navbar-message">🔄 GST EasyMatch - Smart Reconciliation</div>
           <div id="navMessage2" class="navbar-message">📊 TallyBridge - Easy Bank Import</div>
@@ -63,9 +99,7 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu">
@@ -75,7 +109,6 @@
               <li><a class="dropdown-item" href="pages/tally-society-connect.html">Tally-Society Connect</a></li>
             </ul>
           </li>
-
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
             <ul class="dropdown-menu">
@@ -85,10 +118,8 @@
               <li><a class="dropdown-item" href="pages/tally-integration.html">Tally Integration</a></li>
             </ul>
           </li>
-
           <li class="nav-item"><a class="nav-link" href="pages/about-us.html">About Us</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-
         </ul>
       </div>
 
@@ -164,49 +195,43 @@
   <section id="products" class="py-2">
     <div class="container">
       <h2 class="text-center mb-3">Our Products</h2>
-
       <div class="row justify-content-center">
-
         <div class="col-md-6 col-lg-3 mb-3">
           <div class="product-card text-center">
             <div class="product-image-container">
-              <img src="images/pdf to excel logo no bckgrd.webp" class="img-fluid" alt="PDF to Excel">
+              <img src="images/pdf to excel logo no bckgrd.webp" class="img-fluid" alt="PDF to Excel" loading="lazy">
             </div>
             <h3 class="h5 mt-2">PDF to Excel</h3>
             <a href="pages/pdf-to-excel.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 mb-3">
           <div class="product-card text-center">
             <div class="product-image-container">
-              <img src="images/gst reco.webp" class="img-fluid" alt="GST EasyMatch">
+              <img src="images/gst reco.webp" class="img-fluid" alt="GST EasyMatch" loading="lazy">
             </div>
             <h3 class="h5 mt-2">GST EasyMatch</h3>
             <a href="pages/gst-easymatch.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 mb-3">
           <div class="product-card text-center">
             <div class="product-image-container">
-              <img src="images/smart bank import.webp" class="img-fluid" alt="TallyBridge">
+              <img src="images/smart bank import.webp" class="img-fluid" alt="TallyBridge" loading="lazy">
             </div>
             <h3 class="h5 mt-2">TallyBridge</h3>
             <a href="pages/tallybridge.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 mb-3">
           <div class="product-card text-center">
             <div class="product-image-container">
-              <img src="images/hs new.webp" class="img-fluid" alt="Tally-Society Connect">
+              <img src="images/hs new.webp" class="img-fluid" alt="Tally-Society Connect" loading="lazy">
             </div>
             <h3 class="h5 mt-2">Tally-Society Connect</h3>
             <a href="pages/tally-society-connect.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -215,48 +240,65 @@
   <section id="services" class="py-4 bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Our Services</h2>
-
       <div class="row">
-
         <div class="col-md-6 col-lg-3 mb-4">
           <div class="service-card">
             <h3 class="h5">Tally License & Renewals</h3>
             <a href="pages/tally-license.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 mb-4">
           <div class="service-card">
             <h3 class="h5">Tally Customizations</h3>
             <a href="pages/tally-customizations.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 mb-4">
           <div class="service-card">
             <h3 class="h5">Accounting & Taxation</h3>
             <a href="pages/accounting-taxation.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-3 mb-4">
           <div class="service-card">
             <h3 class="h5">Tally Integration</h3>
             <a href="pages/tally-integration.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- Contact Section (EmailJS Integrated) -->
+  <!-- Contact Section (EmailJS + WHATSAPP ADDED) -->
   <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
+      <h2 class="text-center mb-5">Get In Touch</h2>
+      
+      <!-- ✅ WHATSAPP + PHONE BUTTONS ADDED HERE -->
+      <div class="text-center mb-5">
+        <div class="row justify-content-center g-3">
+          <div class="col-md-5 col-lg-4">
+            <a href="https://wa.me/919490128503?text=Hi%20Riveda%20Infosoft%2C%0AI%27m%20interested%20in%20your%20US%20Bookkeeping%20%28QBO%29%20or%20Tally%20solutions.%0APlease%20share%20details%20and%20pricing." 
+               class="btn btn-success btn-lg w-100 shadow-sm mb-3 mb-md-0" 
+               target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp me-2"></i>
+              WhatsApp Chat (Instant)
+            </a>
+          </div>
+          <div class="col-md-5 col-lg-4">
+            <a href="tel:+919490128503" class="btn btn-outline-success btn-lg w-100 shadow-sm">
+              <i class="fas fa-phone me-2"></i>
+              Call: +91 94901 28503
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mb-4">
+        <h5 class="text-muted">OR fill the form below</h5>
+      </div>
 
       <form id="contactForm" class="mx-auto" style="max-width:500px;">
-
         <!-- Honeypot -->
         <input type="text" name="website" style="display:none;">
 
@@ -328,7 +370,6 @@
     emailjs.init("GQTiBT5To43zXjsFN");  // Your PUBLIC KEY
 
     document.addEventListener("DOMContentLoaded", function () {
-
       const form = document.getElementById("contactForm");
       const successMsg = document.getElementById("contactSuccess");
       const errorMsg = document.getElementById("contactError");
@@ -346,7 +387,7 @@
 
         // Disable button
         submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Sending...';
 
         // Send using EmailJS
         emailjs.sendForm(
@@ -366,9 +407,7 @@
           submitBtn.disabled = false;
           submitBtn.textContent = "Submit";
         });
-
       });
-
     });
   </script>
 
