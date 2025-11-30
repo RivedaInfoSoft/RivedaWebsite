@@ -35,6 +35,15 @@ body {
 .navbar-brand img:hover {
   transform: scale(1.05);
 }
+/* FORCE white background behind logo */
+.navbar-brand img {
+  height: 58px;
+  width: auto;
+  background-color: #ffffff !important;  /* force white */
+  padding: 6px 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
 
 .nav-link {
   color: var(--text-dark) !important;
