@@ -6,38 +6,62 @@
   <title>Riveda Infosoft | US Bookkeeping & Automation</title>
 
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
 
-  <!-- Your site styles -->
+  <!-- Your existing site CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
     <div class="container">
-      <!-- BRAND WITH LOGO -->
-      <!-- 🔧 Make sure src matches the logo path used on your other pages -->
+      <!-- ⭐ LOGO: change src to the SAME path used on your other pages -->
       <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="assets/img/riveda-logo.png" alt="Riveda Infosoft" style="height:32px;" />
+        <img
+          src="assets/img/riveda-logo.png"
+          alt="Riveda Infosoft"
+          style="height:32px; width:auto; max-width:180px;"
+          onerror="this.style.display='none';"
+        />
+        <span class="ms-2 fw-bold d-none d-sm-inline">Riveda Infosoft</span>
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/us-bookkeeping.html">US Bookkeeping</a>
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              Products
+            </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="pages/pdf-to-excel.html">PDF to Excel Converter</a></li>
               <li><a class="dropdown-item" href="pages/gst-easymatch.html">GST EasyMatch</a></li>
@@ -47,7 +71,13 @@
           </li>
 
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">India Services</a>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              India Services
+            </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="pages/tally-license.html">Tally License & Renewals</a></li>
               <li><a class="dropdown-item" href="pages/tally-customizations.html">Tally Customizations</a></li>
@@ -68,28 +98,30 @@
     </div>
   </nav>
 
-  <!-- HERO: US BOOKKEEPING -->
+  <!-- Hero / US Bookkeeping -->
   <section class="py-5 bg-dark text-light">
     <div class="container">
       <div class="row align-items-center gy-4">
         <div class="col-lg-7">
-          <p class="small text-uppercase text-info mb-2">US Bookkeeping Services</p>
+          <p class="small text-uppercase text-info mb-2">
+            US Bookkeeping Services
+          </p>
           <h1 class="fw-bold mb-3">
             Remote US Bookkeeping &amp; Clean-Up for QuickBooks Online
           </h1>
           <p class="mb-3">
-            India-based accountant with 20+ years of experience in accounting, Tally and automation,
-            now focused on helping US small businesses and CPA firms maintain clean, accurate
-            QuickBooks Online books.
+            India-based accountant with 20+ years of experience in accounting,
+            Tally and automation, now focused on helping US small businesses
+            and CPA firms maintain clean, accurate QuickBooks Online books.
           </p>
 
-          <!-- QuickBooks badge -->
+          <!-- QBO badge -->
           <div class="mb-3">
             <span class="badge bg-success me-2">
               QuickBooks Online – Level 1 Certified
             </span>
             <span class="small text-light">
-              Remote bookkeeping support for US businesses &amp; CPAs.
+              Remote US bookkeeping specialist for small businesses &amp; CPAs.
             </span>
           </div>
 
@@ -100,23 +132,22 @@
             <li>Back-office support for CPAs and EA firms</li>
           </ul>
 
-          <!-- CTAs -->
-          <div class="d-flex flex-wrap gap-2 mb-3">
+          <div class="d-flex flex-wrap gap-2 mb-2">
             <a href="pages/us-bookkeeping.html" class="btn btn-light">
               View US Bookkeeping Details
             </a>
             <a href="#contact" class="btn btn-outline-light">
               Request a Free Discovery Call
             </a>
-            <!-- 🔧 Replace with your real Calendly / Zoho Bookings link -->
+            <!-- 🔗 replace this link with your real Calendly / Zoho booking URL -->
             <a href="https://calendly.com/YOUR-LINK" class="btn btn-outline-info">
               Schedule a Meeting
             </a>
           </div>
 
           <p class="small text-muted mb-0">
-            Timezone: India (IST) • Comfortable with US time overlap •
-            Strong experience with QuickBooks Online and automation.
+            Timezone: India (IST) • I keep overlapping hours with US time zones
+            for coordination and review calls.
           </p>
         </div>
 
@@ -139,27 +170,33 @@
     </div>
   </section>
 
-  <!-- AUTOMATION & PRODUCTS -->
+  <!-- Automation & Products -->
   <section class="py-5 bg-light">
     <div class="container">
       <div class="text-center mb-4">
         <h2 class="fw-bold">Automation &amp; Products</h2>
         <p class="text-muted mb-0">
-          Along with bookkeeping, Riveda Infosoft builds simple automation tools around Excel, Tally and bank statements.
+          Along with bookkeeping, Riveda Infosoft builds simple automation tools
+          around Excel, Tally and bank statements.
         </p>
       </div>
+
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Bank PDF → Excel Converter</h5>
               <p class="card-text small text-muted">
-                Convert Indian bank PDF statements into clean Excel files, ready for import into Tally or further analysis.
+                Convert Indian bank PDF statements into clean Excel files, ready
+                for import into Tally or further analysis.
               </p>
-              <a href="pages/pdf-to-excel.html" class="btn btn-sm btn-outline-primary">Learn more</a>
+              <a href="pages/pdf-to-excel.html" class="btn btn-sm btn-outline-primary">
+                Learn more
+              </a>
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
@@ -167,89 +204,127 @@
               <p class="card-text small text-muted">
                 Excel-based GST reconciliation and matching assistance for Indian businesses.
               </p>
-              <a href="pages/gst-easymatch.html" class="btn btn-sm btn-outline-primary">Learn more</a>
+              <a href="pages/gst-easymatch.html" class="btn btn-sm btn-outline-primary">
+                Learn more
+              </a>
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="card h-100 shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Tally Integrations</h5>
               <p class="card-text small text-muted">
-                Tools and templates to integrate Tally with Excel and other systems, reducing repetitive manual entry.
+                Tools and templates to integrate Tally with Excel and other systems,
+                reducing repetitive manual entry.
               </p>
-              <a href="pages/tally-integration.html" class="btn btn-sm btn-outline-primary">Learn more</a>
+              <a href="pages/tally-integration.html" class="btn btn-sm btn-outline-primary">
+                Learn more
+              </a>
             </div>
           </div>
         </div>
       </div>
-
-      <p class="mt-4 small text-muted text-center">
-        Looking for ongoing US bookkeeping support in QuickBooks Online?
-        <a href="pages/us-bookkeeping.html">Learn more about my US Bookkeeping services.</a>
-      </p>
     </div>
   </section>
 
-  <!-- FAQ SECTION -->
-  <section class="py-5 bg-white" id="faq">
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light" id="faq">
     <div class="container">
       <h2 class="fw-bold mb-3">US Bookkeeping – FAQs</h2>
       <div class="accordion" id="usFaq">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="q1">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1">
+          <h2 class="accordion-header" id="faq1">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq1Body"
+            >
               Do you work with US time zones?
             </button>
           </h2>
-          <div id="a1" class="accordion-collapse collapse show" data-bs-parent="#usFaq">
+          <div
+            id="faq1Body"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#usFaq"
+          >
             <div class="accordion-body">
-              Yes. I am based in India (IST) but I keep overlapping hours with US time zones
-              for meetings and coordination, especially during onboarding and month-end.
+              Yes. I am based in India (IST) but I keep overlapping hours with US
+              time zones for meetings, clarifications and monthly reviews.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <h2 class="accordion-header" id="q2">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2">
+          <h2 class="accordion-header" id="faq2">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq2Body"
+            >
               How do I share access to QuickBooks Online?
             </button>
           </h2>
-          <div id="a2" class="accordion-collapse collapse" data-bs-parent="#usFaq">
+          <div
+            id="faq2Body"
+            class="accordion-collapse collapse"
+            data-bs-parent="#usFaq"
+          >
             <div class="accordion-body">
-              You can invite me as an Accountant user or a standard user with limited access.
-              I will guide you step-by-step so that security and control remain with you.
+              You can invite me as an Accountant user or a limited standard user
+              inside QuickBooks Online. I will guide you step-by-step so that
+              access is secure and controlled.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <h2 class="accordion-header" id="q3">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a3">
+          <h2 class="accordion-header" id="faq3">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq3Body"
+            >
               How do payments work?
             </button>
           </h2>
-          <div id="a3" class="accordion-collapse collapse" data-bs-parent="#usFaq">
+          <div
+            id="faq3Body"
+            class="accordion-collapse collapse"
+            data-bs-parent="#usFaq"
+          >
             <div class="accordion-body">
-              For US clients, I usually work on a fixed monthly fee or a fixed clean-up project fee.
-              Payments are accepted via standard online payment platforms. All pricing is discussed
-              and agreed in advance—no surprises.
+              For US clients, I usually work on a fixed monthly fee for ongoing
+              bookkeeping, or a fixed project fee for clean-up. Payments can be
+              made through common international payment platforms.
             </div>
           </div>
         </div>
 
         <div class="accordion-item">
-          <h2 class="accordion-header" id="q4">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a4">
+          <h2 class="accordion-header" id="faq4">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faq4Body"
+            >
               Which industries do you support?
             </button>
           </h2>
-          <div id="a4" class="accordion-collapse collapse" data-bs-parent="#usFaq">
+          <div
+            id="faq4Body"
+            class="accordion-collapse collapse"
+            data-bs-parent="#usFaq"
+          >
             <div class="accordion-body">
-              I primarily work with service businesses, consultants, coaches, local businesses,
-              and small e-commerce / online sellers. If your business is different, we can still
-              discuss whether it is a good fit.
+              Service businesses, consultants, coaches, local businesses,
+              e-commerce sellers and other small-business models. If your
+              workflow is special, we can discuss it during the discovery call.
             </div>
           </div>
         </div>
@@ -257,19 +332,21 @@
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="py-5 bg-light">
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
     <div class="container">
       <div class="text-center mb-4">
-        <h2 class="fw-bold">Contact / Book a Call</h2>
+        <h2 class="fw-bold">Contact</h2>
         <p class="text-muted mb-0">
-          Share your requirement and I will respond within one business day with next steps and a simple plan.
+          Share your requirement and I will respond within one business day.
         </p>
       </div>
+
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <div class="card shadow-sm border-0">
             <div class="card-body p-4">
+              <!-- Replace action with your real form handler if you have one -->
               <form action="https://formspree.io/f/your-form-id" method="POST">
                 <div class="mb-3">
                   <label class="form-label">Name</label>
@@ -281,14 +358,24 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Message</label>
-                  <textarea class="form-control" rows="4" name="message"
-                    placeholder="Tell me briefly about your bookkeeping or automation requirement"></textarea>
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    name="message"
+                    placeholder="Tell me briefly about your bookkeeping or automation requirement"
+                  ></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit
+                </button>
               </form>
+
               <div class="mt-3 small text-muted">
                 WhatsApp:
-                <a href="https://wa.me/919490128503" target="_blank">+91 9490128503</a><br />
+                <a href="https://wa.me/919490128503" target="_blank">
+                  +91 9490128503
+                </a>
+                <br />
                 Email:
                 <a href="mailto:info@rivedainfosoft.com">info@rivedainfosoft.com</a>
               </div>
@@ -299,13 +386,27 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer class="py-3 bg-dark text-light">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-      <div class="small">© 2019–2025 Riveda Infosoft. All rights reserved.</div>
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
+    >
       <div class="small">
-        <a href="pages/privacy-policy.html" class="text-decoration-none text-light me-3">Privacy Policy</a>
-        <a href="pages/terms-of-use.html" class="text-decoration-none text-light">Terms of Use</a>
+        © 2019–2025 Riveda Infosoft. All rights reserved.
+      </div>
+      <div class="small">
+        <a
+          href="pages/privacy-policy.html"
+          class="text-decoration-none text-light me-3"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="pages/terms-of-use.html"
+          class="text-decoration-none text-light"
+        >
+          Terms of Use
+        </a>
       </div>
     </div>
   </footer>
