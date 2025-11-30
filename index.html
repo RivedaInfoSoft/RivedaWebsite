@@ -281,44 +281,58 @@
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <script>
-    // Initialize EmailJS
-    emailjs.init("YOUR_PUBLIC_KEY_HERE");
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    document.addEventListener("DOMContentLoaded", function () {
-      const form = document.getElementById("contactForm");
-      const successMsg = document.getElementById("contactSuccess");
-      const errorMsg = document.getElementById("contactError");
-      const submitBtn = document.getElementById("contactSubmitBtn");
+<script>
+  // Initialize EmailJS
+  emailjs.init("GQTiBT5To43zXjsFN");  // Your PUBLIC KEY
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
+  document.addEventListener("DOMContentLoaded", function () {
 
-        // Honeypot check
-        if (form.website && form.website.value !== "") return;
+    const form = document.getElementById("contactForm");
+    const successMsg = document.getElementById("contactSuccess");
+    const errorMsg = document.getElementById("contactError");
+    const submitBtn = document.getElementById("contactSubmitBtn");
 
-        successMsg.style.display = "none";
-        errorMsg.style.display = "none";
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
+      // Honeypot check (spam protection)
+      if (form.website && form.website.value !== "") return;
 
-        emailjs.sendForm("YOUR_SERVICE_ID_HERE", "YOUR_TEMPLATE_ID_HERE", form)
-        .then(() => {
-          successMsg.style.display = "block";
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Submit";
-          form.reset();
-        })
-        .catch(() => {
-          errorMsg.style.display = "block";
-          submitBtn.disabled = false;
-          submitBtn.textContent = "Submit";
-        });
+      // Reset messages
+      successMsg.style.display = "none";
+      errorMsg.style.display = "none";
 
+      // Disable button
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      // Send using EmailJS
+      emailjs.sendForm(
+        "service_scz45y2",      // Your SERVICE ID
+        "template_r7xu9kr",     // Your TEMPLATE ID
+        form
+      )
+      .then(() => {
+        successMsg.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit";
+        form.reset();
+      })
+      .catch((err) => {
+        console.error("EmailJS Error:", err);
+        errorMsg.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit";
       });
+
     });
-  </script>
+
+  });
+</script>
+
 
   <script src="js/scripts.js"></script>
 
