@@ -20,56 +20,68 @@
   <meta property="og:url" content="https://rivedainfosoft.com/">
   <meta property="og:type" content="website">
 
-  <style>
-    .marquee-container { width: 100%; overflow: hidden; background: #152238; padding: 8px 0; }
-    .color-changing-text { display:inline-block; font-size:16px; white-space:nowrap; padding-left:100%;
-      animation: marquee 30s linear infinite, colorChange 12s linear infinite; color:white; }
-    @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-    @keyframes colorChange { 0%,100%{color:white;} 25%{color:#ffc107;} 50%{color:#28a745;} 75%{color:#17a2b8;} }
+ <style>
+  .marquee-container { width: 100%; overflow: hidden; background: #152238; padding: 8px 0; }
+  .color-changing-text { display:inline-block; font-size:16px; white-space:nowrap; padding-left:100%;
+    animation: marquee 30s linear infinite, colorChange 12s linear infinite; color:white; }
+  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+  @keyframes colorChange { 0%,100%{color:white;} 25%{color:#ffc107;} 50%{color:#28a745;} 75%{color:#17a2b8;} }
 
-    .navbar { background:#0072bc !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .navbar .nav-link { color:white !important; font-weight:500; }
-    .navbar .nav-link:hover { color:#ffd700 !important; }
+  .navbar { background:#0072bc !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+  .navbar .nav-link { color:white !important; font-weight:500; }
+  .navbar .nav-link:hover { color:#ffd700 !important; }
 
-    /* NAVBAR LOGO + MESSAGES FIX */
-    .navbar-brand-section { 
-      display: flex; 
-      align-items: center; 
-      width: 380px; 
-      margin-right: 20px; 
-      overflow: hidden; 
-    }
-    .navbar-brand { 
-      flex-shrink: 0; 
-      margin-right: 15px; 
-    }
-    .navbar-brand img { 
-      height: 32px; 
-      width: auto; 
-      border-radius: 4px; 
-      transition: transform 0.2s ease; 
-    }
-    .navbar-brand:hover img { transform: scale(1.05); }
-    
-    .navbar-messages-container { 
-      height:24px; 
-      position:relative; 
-      overflow:hidden; 
-      flex-grow: 1; 
-    }
-    .navbar-message { position:absolute; width:100%; color:white; opacity:0; font-size: 14px; }
-    @keyframes fadeMessage {0%,100%{opacity:0;} 3%,22%{opacity:1;} 25%{opacity:0;} }
-    #navMessage1 { animation: fadeMessage 16s infinite 0s; }
-    #navMessage2 { animation: fadeMessage 16s infinite 4s; }
-    #navMessage3 { animation: fadeMessage 16s infinite 8s; }
-    #navMessage4 { animation: fadeMessage 16s infinite 12s; }
+  /* NAVBAR LOGO - LARGER + WHITE BACKGROUND */
+  .navbar-brand-section { 
+    display: flex; 
+    align-items: center; 
+    width: 420px; 
+    margin-right: 20px; 
+    overflow: hidden; 
+  }
+  .navbar-brand { 
+    flex-shrink: 0; 
+    margin-right: 20px; 
+  }
+  .navbar-brand img { 
+    height: 48px !important;  /* LARGER: 48px (was 32px) */
+    width: auto; 
+    background: white;        /* ✅ WHITE BACKGROUND */
+    padding: 6px 10px;        /* Padding around logo */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Subtle shadow */
+    transition: all 0.3s ease; 
+  }
+  .navbar-brand:hover img { 
+    transform: scale(1.08); 
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  }
+  
+  .navbar-messages-container { 
+    height:26px;              /* Slightly taller for balance */
+    position:relative; 
+    overflow:hidden; 
+    flex-grow: 1; 
+  }
+  .navbar-message { position:absolute; width:100%; color:white; opacity:0; font-size: 14px; }
+  @keyframes fadeMessage {0%,100%{opacity:0;} 3%,22%{opacity:1;} 25%{opacity:0;} }
+  #navMessage1 { animation: fadeMessage 16s infinite 0s; }
+  #navMessage2 { animation: fadeMessage 16s infinite 4s; }
+  #navMessage3 { animation: fadeMessage 16s infinite 8s; }
+  #navMessage4 { animation: fadeMessage 16s infinite 12s; }
 
-    /* MOBILE FIXES */
-    @media (max-width: 768px) {
-      .marquee-container { display: none; }
-      .navbar-brand-section { width: 250px; }
-    }
-  </style>
+  /* MOBILE FIXES */
+  @media (max-width: 768px) {
+    .marquee-container { display: none; }
+    .navbar-brand-section { width: 280px; }
+    .navbar-brand img { height: 40px !important; padding: 4px 8px; } /* Smaller on mobile */
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-brand { display: none; } /* Hide logo on tablet */
+  }
+</style>
+
 
 </head>
 <body>
