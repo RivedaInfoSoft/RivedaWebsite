@@ -1,422 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Riveda Infosoft | US Bookkeeping & Automation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <!-- SEO -->
+  <meta name="description" content="Riveda Infosoft provides remote US bookkeeping, QuickBooks Online cleanup, catch-up and monthly accounting support for US businesses and CPA firms.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://rivedainfosoft.com/">
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-  />
+  <title>Riveda Infosoft | CPA Support & QuickBooks Bookkeeping</title>
 
-  <!-- Your existing site CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Riveda Infosoft – CPA Support & QuickBooks Bookkeeping">
+  <meta property="og:description" content="Remote US bookkeeping, QuickBooks cleanup & CPA back-office support by a senior ProAdvisor.">
+  <meta property="og:image" content="https://rivedainfosoft.com/images/logo-transparent-png.webp">
+  <meta property="og:url" content="https://rivedainfosoft.com/">
+  <meta property="og:type" content="website">
+
+  <!-- FAVICON (IMPORTANT) -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .navbar { background:#0072bc !important; }
+    .navbar .nav-link { color:#fff !important; font-weight:500; }
+    .navbar .nav-link:hover { color:#ffd700 !important; }
+  </style>
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
-    <div class="container">
-      <!-- ⭐ LOGO: change src to the SAME path used on your other pages -->
-     <a class="navbar-brand d-flex align-items-center" href="index.html">
- <img 
-  src="images/logo-transparent-png.webp"
-  alt="Riveda Infosoft Logo"
-  class="logo-img"
-  loading="lazy"
-  style="height:120px; width:auto;"
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="images/logo-transparent-png.webp" alt="Riveda Infosoft" height="48">
+    </a>
 
-</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="pages/us-bookkeeping.html">US Bookkeeping</a></li>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Indian Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pages/tally-license.html">Tally License & Renewals</a></li>
+            <li><a class="dropdown-item" href="pages/tally-customizations.html">Tally Customizations</a></li>
+            <li><a class="dropdown-item" href="pages/accounting-taxation.html">Accounting & Taxation</a></li>
+            <li><a class="dropdown-item" href="pages/tally-integration.html">Tally Integration</a></li>
+          </ul>
+        </li>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/us-bookkeeping.html">US Bookkeeping</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-            >
-              Products
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="pages/pdf-to-excel.html">PDF to Excel Converter</a></li>
-              <li><a class="dropdown-item" href="pages/gst-easymatch.html">GST EasyMatch</a></li>
-              <li><a class="dropdown-item" href="pages/tallybridge.html">TallyBridge</a></li>
-              <li><a class="dropdown-item" href="pages/tally-society-connect.html">Tally-Society Connect</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              data-bs-toggle="dropdown"
-            >
-              India Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="pages/tally-license.html">Tally License & Renewals</a></li>
-              <li><a class="dropdown-item" href="pages/tally-customizations.html">Tally Customizations</a></li>
-              <li><a class="dropdown-item" href="pages/accounting-taxation.html">Accounting & Taxation</a></li>
-              <li><a class="dropdown-item" href="pages/tally-integration.html">Tally Integration</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="pages/about-us.html">About</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="btn btn-primary ms-lg-3" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <li class="nav-item"><a class="nav-link" href="pages/about-us.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero / US Bookkeeping -->
-  <section class="py-5 bg-dark text-light">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-        <div class="col-lg-7">
-          <p class="small text-uppercase text-info mb-2">
-            US Bookkeeping Services
-          </p>
-          <h1 class="fw-bold mb-3">
-            Remote US Bookkeeping &amp; Clean-Up for QuickBooks Online
-          </h1>
-          <p class="mb-3">
-            India-based accountant with 20+ years of experience in accounting,
-            Tally and automation, now focused on helping US small businesses
-            and CPA firms maintain clean, accurate QuickBooks Online books.
-          </p>
+<!-- HERO -->
+<section class="py-5" style="background:#111827;color:#fff;">
+  <div class="container">
+    <div class="row align-items-center g-4">
 
-          <!-- QBO badge -->
-          <div class="mb-3">
-            <span class="badge bg-success me-2">
-              QuickBooks Online – Level 1 Certified
-            </span>
-            <span class="small text-light">
-              Remote US bookkeeping specialist for small businesses &amp; CPAs.
-            </span>
-          </div>
+      <div class="col-lg-7">
+        <p class="text-uppercase mb-2" style="color:#22d3ee;letter-spacing:2px;">
+          US BOOKKEEPING SERVICES
+        </p>
 
-          <ul class="mb-4">
-            <li>Monthly bookkeeping &amp; bank / credit card reconciliations</li>
-            <li>6–24 months catch-up &amp; clean-up projects</li>
-            <li>QBO setup / re-setup and chart of accounts</li>
-            <li>Back-office support for CPAs and EA firms</li>
+        <h1 class="fw-bold mb-3">
+          Remote US Bookkeeping & QuickBooks Online Support
+        </h1>
+
+        <p class="mb-3" style="max-width:650px;">
+          Senior accounting professional with <strong>20+ years of experience</strong> in bookkeeping,
+          reconciliations, cleanup projects, and financial reporting.
+          <br><br>
+          <strong>QuickBooks Online ProAdvisor</strong> (Level 2), Intuit Bookkeeping Certified and CAS Trained,
+          supporting US small businesses and CPA firms with accurate, CPA-ready books.
+        </p>
+
+        <p class="mb-3">
+          <strong>Currently supporting CPA and EA firms</strong> with overflow bookkeeping and QuickBooks cleanup during tax season.
+        </p>
+
+        <p class="small text-muted">
+          Serving US clients remotely with flexible overlap in US business hours.
+        </p>
+
+        <ul class="mb-4">
+          <li>Monthly bookkeeping & reconciliations</li>
+          <li>Catch-up & clean-up projects</li>
+          <li>QuickBooks setup & review</li>
+          <li>CPA & EA back-office support</li>
+        </ul>
+
+        <a href="https://calendly.com/your-link" target="_blank" class="btn btn-lg btn-success me-2">
+          Schedule Introductory Call
+        </a>
+
+        <a href="#contact" class="btn btn-lg btn-outline-light">
+          Prefer Email
+        </a>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="p-4 bg-white rounded shadow" style="color:#111827;">
+          <h5 class="fw-bold mb-3">Typical Engagement</h5>
+          <ul class="small">
+            <li>Review QuickBooks & bank statements</li>
+            <li>Fix unreconciled transactions</li>
+            <li>Deliver CPA-ready financials</li>
+            <li>Confidential, reliable remote support</li>
           </ul>
 
-          <div class="d-flex flex-wrap gap-2 mb-2">
-            <a href="pages/us-bookkeeping.html" class="btn btn-light">
-              View US Bookkeeping Details
-            </a>
-            <a href="#contact" class="btn btn-outline-light">
-              Request a Free Discovery Call
-            </a>
-            <!-- 🔗 replace this link with your real Calendly / Zoho booking URL -->
-            <a href="https://calendly.com/YOUR-LINK" class="btn btn-outline-info">
-              Schedule a Meeting
-            </a>
-          </div>
+          <hr>
 
-          <p class="small text-muted mb-0">
-            Timezone: India (IST) • I keep overlapping hours with US time zones
-            for coordination and review calls.
-          </p>
-        </div>
-
-        <div class="col-lg-5">
-          <div class="bg-light text-dark rounded-3 p-4 shadow-sm">
-            <h5 class="mb-3">Typical Engagement</h5>
-            <ul class="small mb-3">
-              <li>Review of existing QBO file &amp; bank statements</li>
-              <li>Fix mis-categorised transactions and old unreconciled items</li>
-              <li>Monthly reports: Profit &amp; Loss, Balance Sheet, Cash Flow</li>
-              <li>Prepared, clean books that CPAs love to work with</li>
-            </ul>
-            <p class="small text-muted mb-0">
-              Also building automation tools like PDF-to-Excel and Tally integration
-              to reduce manual work and errors.
-            </p>
+          <div class="d-flex align-items-center gap-3">
+            <img src="images/qbo-proadvisor-level2.jpg" alt="QBO Level 2" height="64">
+            <div class="small">
+              <strong>QuickBooks Online ProAdvisor – Level 2</strong><br>
+              Intuit Bookkeeping Certified | CAS Trained
+            </div>
           </div>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Automation & Products -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-4">
-        <h2 class="fw-bold">Automation &amp; Products</h2>
-        <p class="text-muted mb-0">
-          Along with bookkeeping, Riveda Infosoft builds simple automation tools
-          around Excel, Tally and bank statements.
-        </p>
-      </div>
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+  <div class="container text-center">
+    <h2 class="mb-3">Contact</h2>
+    <p class="mb-2">CPAs typically prefer a scheduled discussion.</p>
+    <p class="fw-bold mb-3">📧 usbookkeeping@rivedainfosoft.com</p>
 
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Bank PDF → Excel Converter</h5>
-              <p class="card-text small text-muted">
-                Convert Indian bank PDF statements into clean Excel files, ready
-                for import into Tally or further analysis.
-              </p>
-              <a href="pages/pdf-to-excel.html" class="btn btn-sm btn-outline-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
+    <a href="https://calendly.com/your-link" target="_blank" class="btn btn-outline-success">
+      Schedule a Call
+    </a>
+  </div>
+</section>
 
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">GST EasyMatch</h5>
-              <p class="card-text small text-muted">
-                Excel-based GST reconciliation and matching assistance for Indian businesses.
-              </p>
-              <a href="pages/gst-easymatch.html" class="btn btn-sm btn-outline-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
+<!-- TRUST BAR -->
+<section class="py-3 bg-light text-center">
+  <div class="container small">
+    Trusted for:
+    ✔ QuickBooks Cleanup & Reconciliation
+    ✔ CPA-Ready Financials
+    ✔ Confidential Remote Engagements
+  </div>
+</section>
 
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Tally Integrations</h5>
-              <p class="card-text small text-muted">
-                Tools and templates to integrate Tally with Excel and other systems,
-                reducing repetitive manual entry.
-              </p>
-              <a href="pages/tally-integration.html" class="btn btn-sm btn-outline-primary">
-                Learn more
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- FOOTER -->
+<footer class="py-4 text-center text-white" style="background:#152238;">
+  © 2019–2025 Riveda Infosoft. All rights reserved.
+</footer>
 
-  <!-- FAQ Section -->
-  <section class="py-5 bg-light" id="faq">
-    <div class="container">
-      <h2 class="fw-bold mb-3">US Bookkeeping – FAQs</h2>
-      <div class="accordion" id="usFaq">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="faq1">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faq1Body"
-            >
-              Do you work with US time zones?
-            </button>
-          </h2>
-          <div
-            id="faq1Body"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#usFaq"
-          >
-            <div class="accordion-body">
-              Yes. I am based in India (IST) but I keep overlapping hours with US
-              time zones for meetings, clarifications and monthly reviews.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="faq2">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faq2Body"
-            >
-              How do I share access to QuickBooks Online?
-            </button>
-          </h2>
-          <div
-            id="faq2Body"
-            class="accordion-collapse collapse"
-            data-bs-parent="#usFaq"
-          >
-            <div class="accordion-body">
-              You can invite me as an Accountant user or a limited standard user
-              inside QuickBooks Online. I will guide you step-by-step so that
-              access is secure and controlled.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="faq3">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faq3Body"
-            >
-              How do payments work?
-            </button>
-          </h2>
-          <div
-            id="faq3Body"
-            class="accordion-collapse collapse"
-            data-bs-parent="#usFaq"
-          >
-            <div class="accordion-body">
-              For US clients, I usually work on a fixed monthly fee for ongoing
-              bookkeeping, or a fixed project fee for clean-up. Payments can be
-              made through common international payment platforms.
-            </div>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="faq4">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faq4Body"
-            >
-              Which industries do you support?
-            </button>
-          </h2>
-          <div
-            id="faq4Body"
-            class="accordion-collapse collapse"
-            data-bs-parent="#usFaq"
-          >
-            <div class="accordion-body">
-              Service businesses, consultants, coaches, local businesses,
-              e-commerce sellers and other small-business models. If your
-              workflow is special, we can discuss it during the discovery call.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-    <!-- Contact Section -->
-  <section id="contact" class="py-5">
-    <div class="container">
-      <div class="text-center mb-4">
-        <h2 class="fw-bold">Contact</h2>
-        <p class="text-muted mb-0">
-          Share your requirement and I will respond within one business day.
-        </p>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="card shadow-sm border-0">
-            <div class="card-body p-4">
-
-              <!-- ✅ This is your original working FormSubmit setup -->
-              <form class="contact-form" action="https://formsubmit.co/info@rivedainfosoft.com" method="POST">
-                <!-- FormSubmit.co Configuration -->
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <input type="hidden" name="_subject" value="New Contact Form Submission - Riveda Infosoft">
-                <input type="hidden" name="_next" value="https://rivedainfosoft.com/thank-you.html">
-                <input type="hidden" name="_autoresponse"
-                       value="Thank you for contacting Riveda Infosoft. We have received your message and will get back to you shortly.">
-
-                <div class="mb-3">
-                  <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" name="name" required>
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="mb-3">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" name="message" rows="4"
-                            placeholder="Tell me briefly about your bookkeeping or automation requirement"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary w-100">Submit</button>
-              </form>
-
-              <div class="mt-3 small text-muted">
-                WhatsApp:
-                <a href="https://wa.me/919490128503" target="_blank">+91 9490128503</a><br />
-                Email:
-                <a href="mailto:info@rivedainfosoft.com">info@rivedainfosoft.com</a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- Footer -->
-  <footer class="py-3 bg-dark text-light">
-    <div
-      class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2"
-    >
-      <div class="small">
-        © 2019–2025 Riveda Infosoft. All rights reserved.
-      </div>
-      <div class="small">
-        <a
-          href="pages/privacy-policy.html"
-          class="text-decoration-none text-light me-3"
-        >
-          Privacy Policy
-        </a>
-        <a
-          href="pages/terms-of-use.html"
-          class="text-decoration-none text-light"
-        >
-          Terms of Use
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
