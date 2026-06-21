@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -13,32 +13,21 @@
   <style>
     .marquee-container {
       width: 100%;
-      overflow: hidden;
       background: #152238;
       padding: 8px 0;
       margin: 0;
+      text-align: center;
     }
 
     .color-changing-text {
-      display: inline-block;
-      font-size: 16px;
+      display: block;
+      font-size: 14px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       letter-spacing: 0.5px;
-      white-space: nowrap;
-      padding-left: 100%;
-      animation: marquee 30s linear infinite, colorChange 12s linear infinite;
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-    @keyframes colorChange {
-      0%, 100% { color: #ffffff; }
-      25% { color: #ffc107; }
-      50% { color: #28a745; }
-      75% { color: #17a2b8; }
+      color: #ffffff;
+      text-align: center;
+      padding: 0 12px;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -55,20 +44,25 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tallybridge.html">Smart Bank Import Suite</a></li>
               <li><a class="dropdown-item" href="smart-ca-communicator.html">Smart CA Communicator</a></li>
-              <li><a class="dropdown-item" href="pdf-to-excel.html">PDF to Excel Converter</a></li>
-              <li><a class="dropdown-item" href="gst-easymatch.html">GST EasyMatch</a></li>
-              <li><a class="dropdown-item" href="tallybridge.html">TallyBridge</a></li>
-              <li><a class="dropdown-item" href="tally-society-connect.html">Tally-Society Connect</a></li>
-              <li><a class="dropdown-item" href="school-college-soft.html">School/College Soft</a></li>
-              <li><a class="dropdown-item" href="chitfund-soft.html">Chitfund Soft</a></li>
-              <li><a class="dropdown-item" href="tally-auto-backup.html">Tally Auto Backup</a></li>
-              <li><a class="dropdown-item" href="advanced-document-manager.html">Advanced Document Manager</a></li>
+              <li><a class="dropdown-item" href="school-college-soft.html">Tally School and College Soft</a></li>
+              <li><a class="dropdown-item" href="tally-society-connect.html">Tally Society Module</a></li>
               <li><a class="dropdown-item" href="tally-hospital-module.html">Tally Hospital Module</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="us-bookkeeping.html">US Bookkeeping</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tally-license.html">Tally License &amp; Renewals</a></li>
+              <li><a class="dropdown-item" href="tally-customizations.html">Tally Customizations</a></li>
+              <li><a class="dropdown-item" href="accounting-taxation.html">Accounting &amp; Taxation</a></li>
+              <li><a class="dropdown-item" href="tally-integration.html">Tally Integration</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html#contact">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -76,7 +70,7 @@
 
   <div class="marquee-container">
     <div class="color-changing-text">
-      RIVEDA INFOSOFT - TRANSFORMING BUSINESSES WITH INNOVATIVE SOLUTIONS - TALLY AND VBA EXPERTS
+      RIVEDA INFOSOFT - Accounting Technology | Desktop Software | Smart Bank Import Suite | Smart CA Communicator | Tally Automation | WhatsApp Business Integration
     </div>
   </div>
 
@@ -84,115 +78,64 @@
     <div class="container">
       <h1 class="text-center mb-4">Our Products</h1>
       <p class="lead text-center mb-5">Discover our innovative solutions for business efficiency.</p>
-      <div class="row">
-        <div class="col-md-3 mb-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-4">
+        <div class="col">
+          <div class="card product-card h-100">
+            <a href="tallybridge.html" class="text-decoration-none text-dark">
+              <img src="../images/smart bank import.webp" alt="Smart Bank Import Suite" class="card-img-top" loading="lazy">
+              <div class="card-body">
+                <h3 class="card-title h5">Smart Bank Import Suite</h3>
+                <p class="small">Includes bank statement import, GST reconciliation support, validation and accounting workflow automation.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col">
           <div class="card product-card h-100">
             <a href="smart-ca-communicator.html" class="text-decoration-none text-dark">
               <div class="card-img-top d-flex align-items-center justify-content-center" style="height:160px; background: linear-gradient(135deg, #e8f0ff, #f0f5ff);">
                 <i class="fab fa-whatsapp fa-4x text-success" aria-hidden="true"></i>
               </div>
               <div class="card-body">
-                <h3 class="card-title">Smart CA Communicator</h3>
-                <p>Desktop application for Chartered Accountants to communicate with clients using their own WhatsApp Business accounts through Meta Cloud API.</p>
+                <h3 class="card-title h5">Smart CA Communicator</h3>
+                <p class="small">Desktop application for Chartered Accountants using their own WhatsApp Business accounts through Meta Cloud API.</p>
               </div>
             </a>
           </div>
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col">
           <div class="card product-card h-100">
-            <a href="pdf-to-excel.html">
-              <img src="../images/pdf-to-excel.webp" alt="PDF to Excel Converter" class="card-img-top" loading="lazy">
+            <a href="school-college-soft.html" class="text-decoration-none text-dark">
+              <div class="card-img-top d-flex align-items-center justify-content-center" style="height:160px; background: linear-gradient(135deg, #e8f0ff, #f0f5ff);">
+                <i class="fas fa-graduation-cap fa-4x text-primary" aria-hidden="true"></i>
+              </div>
               <div class="card-body">
-                <h3 class="card-title">PDF to Excel Converter</h3>
-                <p>Convert PDF bank statements and financial documents into Excel for seamless Tally integration.</p>
+                <h3 class="card-title h5">Tally School and College Soft</h3>
+                <p class="small">Educational institution management software integrated with Tally.</p>
               </div>
             </a>
           </div>
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col">
           <div class="card product-card h-100">
-            <a href="gst-easymatch.html">
-              <img src="../images/gst-easymatch.webp" alt="GST EasyMatch" class="card-img-top" loading="lazy">
+            <a href="tally-society-connect.html" class="text-decoration-none text-dark">
+              <img src="../images/hs new.webp" alt="Tally Society Module" class="card-img-top" loading="lazy">
               <div class="card-body">
-                <h3 class="card-title">GST EasyMatch</h3>
-                <p>Simplify Manual GST Reconciliation with Smart Matching Tools.</p>
+                <h3 class="card-title h5">Tally Society Module</h3>
+                <p class="small">Smart accounting for housing societies and apartment associations.</p>
               </div>
             </a>
           </div>
         </div>
-        <div class="col-md-3 mb-4">
+        <div class="col">
           <div class="card product-card h-100">
-            <a href="tallybridge.html">
-              <img src="../images/tallybridge.webp" alt="TallyBridge" class="card-img-top" loading="lazy">
-              <div class="card-body">
-                <h3 class="card-title">TallyBridge</h3>
-                <p>Seamlessly Connect Bank Statements to Tally.</p>
+            <a href="tally-hospital-module.html" class="text-decoration-none text-dark">
+              <div class="card-img-top d-flex align-items-center justify-content-center" style="height:160px; background: linear-gradient(135deg, #e8f0ff, #f0f5ff);">
+                <i class="fas fa-hospital fa-4x text-primary" aria-hidden="true"></i>
               </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card product-card h-100">
-            <a href="tally-society-connect.html">
-              <img src="../images/tally-society-connect.webp" alt="Tally-Society Connect" class="card-img-top" loading="lazy">
               <div class="card-body">
-                <h3 class="card-title">Tally-Society Connect</h3>
-                <p>Smart Accounting for Smarter Societies.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card product-card h-100">
-            <a href="school-college-soft.html">
-              <img src="../images/school-college-soft.webp" alt="School/College Soft" class="card-img-top" loading="lazy">
-              <div class="card-body">
-                <h3 class="card-title">School/College Soft</h3>
-                <p>Comprehensive Educational Institution Management Software.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card product-card h-100">
-            <a href="chitfund-soft.html">
-              <img src="../images/chitfund-soft.webp" alt="Chitfund Soft" class="card-img-top" loading="lazy">
-              <div class="card-body">
-                <h3 class="card-title">Chitfund Soft</h3>
-                <p>Complete Chit Fund Management Solution.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card product-card h-100">
-            <a href="tally-auto-backup.html">
-              <img src="../images/tally-auto-backup.webp" alt="Tally Auto Backup" class="card-img-top" loading="lazy">
-              <div class="card-body">
-                <h3 class="card-title">Tally Auto Backup</h3>
-                <p>Automated Backup Solution for Tally Data.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card product-card h-100">
-            <a href="tally-hospital-module.html">
-              <img src="../images/tally-hospital-module.webp" alt="Tally Hospital Module" class="card-img-top" loading="lazy">
-              <div class="card-body">
-                <h3 class="card-title">Tally Hospital Module</h3>
-                <p>Comprehensive Hospital Management Solution Integrated with Tally.</p>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-3 mb-4">
-          <div class="card product-card h-100">
-            <a href="advanced-document-manager.html">
-              <img src="../images/advanced-document-manager.webp" alt="Advanced Document Manager" class="card-img-top" loading="lazy">
-              <div class="card-body">
-                <h3 class="card-title">Advanced Document Manager</h3>
-                <p>Efficient Document Management and Organization Solution.</p>
+                <h3 class="card-title h5">Tally Hospital Module</h3>
+                <p class="small">Hospital management module integrated with Tally.</p>
               </div>
             </a>
           </div>
@@ -201,62 +144,50 @@
     </div>
   </section>
 
-  <footer class="bg-dark text-white text-center py-4">
+  <footer class="py-4" style="background-color: #152238;" role="contentinfo">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 mb-3">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="../index.html" class="text-white">Home</a></li>
-            <li><a href="products.html" class="text-white">Products</a></li>
-            <li><a href="about-us.html" class="text-white">About Us</a></li>
-            <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
-            <li><a href="terms-of-use.html" class="text-white">Terms of Use</a></li>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <h5 class="text-white mb-3">Quick Links</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="../index.html#products" class="text-white text-decoration-none">Products</a></li>
+            <li><a href="../index.html#services" class="text-white text-decoration-none">Professional Services</a></li>
+            <li><a href="about-us.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="../index.html#contact" class="text-white text-decoration-none">Contact</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3">
-          <h5>Services</h5>
-          <ul class="list-unstyled">
-            <li><a href="tally-license.html" class="text-white">Tally License & Renewals</a></li>
-            <li><a href="tally-customizations.html" class="text-white">Tally Customizations</a></li>
-            <li><a href="accounting-taxation.html" class="text-white">Accounting & Taxation</a></li>
-            <li><a href="tally-integration.html" class="text-white">Tally Integration</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-3">
-          <h5>Technology</h5>
-          <ul class="list-unstyled">
+        <div class="col-md-6 col-lg-3 mb-3">
+          <h5 class="text-white mb-3">Technology</h5>
+          <ul class="list-unstyled text-start">
             <li class="text-white">Software Development</li>
             <li class="text-white">Accounting Automation</li>
             <li class="text-white">WhatsApp Business Integration</li>
             <li class="text-white">Desktop Applications</li>
+            <li class="text-white">Tally Automation</li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3">
-          <h5>Products</h5>
-          <ul class="list-unstyled">
-            <li><a href="smart-ca-communicator.html" class="text-white">Smart CA Communicator</a></li>
-            <li><a href="pdf-to-excel.html" class="text-white">PDF to Excel Converter</a></li>
-            <li><a href="gst-easymatch.html" class="text-white">GST EasyMatch</a></li>
-            <li><a href="tallybridge.html" class="text-white">TallyBridge</a></li>
-            <li><a href="tally-society-connect.html" class="text-white">Tally-Society Connect</a></li>
-            <li><a href="school-college-soft.html" class="text-white">School/College Soft</a></li>
-            <li><a href="chitfund-soft.html" class="text-white">Chitfund Soft</a></li>
-            <li><a href="tally-auto-backup.html" class="text-white">Tally Auto Backup</a></li>
-            <li><a href="tally-hospital-module.html" class="text-white">Tally Hospital Module</a></li>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <h5 class="text-white mb-3">Products</h5>
+          <ul class="list-unstyled text-start">
+            <li><a href="tallybridge.html" class="text-white text-decoration-none">Smart Bank Import Suite</a></li>
+            <li><a href="smart-ca-communicator.html" class="text-white text-decoration-none">Smart CA Communicator</a></li>
+            <li><a href="school-college-soft.html" class="text-white text-decoration-none">Tally School and College Soft</a></li>
+            <li><a href="tally-society-connect.html" class="text-white text-decoration-none">Tally Society Module</a></li>
+            <li><a href="tally-hospital-module.html" class="text-white text-decoration-none">Tally Hospital Module</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3">
-          <h5>Contact Info</h5>
-          <ul class="list-unstyled">
-            <li>WhatsApp: +91 9490128503</li>
-            <li>Email: <a href="mailto:info@rivedainfosoft.com" class="text-white">info@rivedainfosoft.com</a></li>
-            <li><a href="privacy-policy.html" class="text-white">Privacy Policy</a></li>
-            <li><a href="terms-of-use.html" class="text-white">Terms of Use</a></li>
+        <div class="col-md-6 col-lg-3 mb-3">
+          <h5 class="text-white mb-3">Contact Info</h5>
+          <ul class="list-unstyled text-start">
+            <li class="text-white">WhatsApp: +91 9490128503</li>
+            <li><a href="mailto:info@rivedainfosoft.com" class="text-white text-decoration-none">Email: info@rivedainfosoft.com</a></li>
+            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html" class="text-white text-decoration-none">Terms of Use</a></li>
           </ul>
         </div>
       </div>
-      <p class="mt-3">© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+      <p class="mt-3 text-white text-center mb-0">© 2019-2026 Riveda Infosoft. All rights reserved.</p>
     </div>
   </footer>
 

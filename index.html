@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Riveda Infosoft – Accounting Technology Company. Desktop business software, accounting automation, WhatsApp Business integration, US bookkeeping, and Tally solutions for CAs and businesses.">
+  <meta name="description" content="Riveda Infosoft develops accounting automation software, desktop applications and business tools for Chartered Accountants, accounting firms and businesses, including Smart Bank Import Suite and Smart CA Communicator.">
   <title>Riveda Infosoft – Accounting Technology &amp; Business Software</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,7 +15,7 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://rivedainfosoft.com/">
   <meta property="og:title" content="Riveda Infosoft – Accounting Technology & Business Software">
-  <meta property="og:description" content="Accounting Technology Company developing desktop business software, accounting automation, WhatsApp Business integration, US bookkeeping, and Tally solutions.">
+  <meta property="og:description" content="Riveda Infosoft develops accounting automation software, desktop applications and business tools for Chartered Accountants, accounting firms and businesses, including Smart Bank Import Suite and Smart CA Communicator.">
   <meta property="og:image" content="https://rivedainfosoft.com/images/logo-transparent-png.webp">
   <meta property="og:url" content="https://rivedainfosoft.com/">
   <meta property="og:type" content="website">
@@ -66,11 +66,8 @@
   </script>
 
  <style>
-  .marquee-container { width: 100%; overflow: hidden; background: #152238; padding: 8px 0; }
-  .color-changing-text { display:inline-block; font-size:16px; white-space:nowrap; padding-left:100%;
-    animation: marquee 30s linear infinite, colorChange 12s linear infinite; color:white; }
-  @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
-  @keyframes colorChange { 0%,100%{color:white;} 25%{color:#ffc107;} 50%{color:#28a745;} 75%{color:#17a2b8;} }
+  .marquee-container { width: 100%; background: #152238; padding: 8px 0; text-align: center; }
+  .color-changing-text { display: block; font-size: 14px; color: white; padding: 0 12px; line-height: 1.4; }
 
   .navbar { background:#0072bc !important; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
   .navbar .nav-link { color:white !important; font-weight:500; }
@@ -80,34 +77,23 @@
   .navbar-brand-section { 
     display: flex; 
     align-items: center; 
-    width: 420px; 
+    gap: 1rem;
     margin-right: 20px; 
-    overflow: hidden; 
   }
   .navbar-brand { 
     flex-shrink: 0; 
-    margin-right: 20px; 
   }
-  
-  
-  
-  .navbar-messages-container { 
-    height:26px;              /* Slightly taller for balance */
-    position:relative; 
-    overflow:hidden; 
-    flex-grow: 1; 
+  .navbar-tagline {
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.3;
+    max-width: 15rem;
   }
-  .navbar-message { position:absolute; width:100%; color:white; opacity:0; font-size: 14px; }
-  @keyframes fadeMessage {0%,100%{opacity:0;} 3%,22%{opacity:1;} 25%{opacity:0;} }
-  #navMessage1 { animation: fadeMessage 16s infinite 0s; }
-  #navMessage2 { animation: fadeMessage 16s infinite 4s; }
-  #navMessage3 { animation: fadeMessage 16s infinite 8s; }
-  #navMessage4 { animation: fadeMessage 16s infinite 12s; }
 
   /* MOBILE FIXES */
   @media (max-width: 768px) {
     .marquee-container { display: none; }
-    .navbar-brand-section { width: 280px; }
    /* .navbar-brand img { height: 40px !important; padding: 4px 8px; }  Smaller on mobile */
     .navbar-brand img { 
   height: 58px;              /* keep your current size */
@@ -139,6 +125,124 @@
   @media (max-width: 991px) {
     .navbar-brand { display: none; } /* Hide logo on tablet */
   }
+
+  /* Homepage hero polish */
+  .home-hero h1 {
+    font-size: clamp(1.65rem, 2.8vw, 2.05rem);
+    line-height: 1.28;
+    max-width: 38rem;
+  }
+  .home-hero-subtitle {
+    font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+    max-width: 650px;
+    line-height: 1.65;
+  }
+  .home-hero-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .home-hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #e5e7eb;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .home-hero-badge i {
+    color: #22d3ee;
+    font-size: 0.8rem;
+    flex-shrink: 0;
+  }
+  .home-hero-product-card {
+    background: #ffffff;
+    color: #111827;
+    border-radius: 12px;
+    border-top: 4px solid #14b8a6;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+    overflow: hidden;
+  }
+  .home-hero-product-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 1rem 1.25rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f0fdfa 100%);
+    border-bottom: 1px solid rgba(20, 184, 166, 0.12);
+  }
+  .home-hero-product-card-header i {
+    color: #14b8a6;
+    font-size: 1.25rem;
+  }
+  .home-hero-product-card-body {
+    padding: 0.25rem 1.25rem 1rem;
+  }
+  .home-hero-product-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  .home-hero-product-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0.5rem;
+  }
+  .home-hero-product-icon {
+    flex-shrink: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e8f0ff, #f0f5ff);
+  }
+  .home-hero-product-icon.icon-whatsapp {
+    background: linear-gradient(135deg, #dcfce7, #ecfdf5);
+  }
+  .home-hero-product-icon.icon-gst {
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+  }
+  .home-hero-product-icon.icon-pdf {
+    background: linear-gradient(135deg, #fee2e2, #fef2f2);
+  }
+  .home-hero-product-foot {
+    margin: 0 1.25rem 1.25rem;
+    padding: 0.85rem 1rem;
+    background: #f8fafc;
+    border-left: 3px solid #14b8a6;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.8125rem;
+    color: #475569;
+    line-height: 1.55;
+  }
+  @media (max-width: 991px) {
+    .home-hero h1 { max-width: 100%; }
+    .home-hero-subtitle { max-width: 100%; }
+  }
+  @media (max-width: 576px) {
+    .home-hero-badge {
+      font-size: 0.75rem;
+      padding: 0.4rem 0.7rem;
+      white-space: normal;
+    }
+    .home-hero-highlights { gap: 0.4rem; }
+    .home-hero .btn-lg {
+      width: 100%;
+      text-align: center;
+    }
+    .home-hero-cta {
+      flex-direction: column;
+    }
+  }
 </style>
 
 
@@ -149,19 +253,12 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
 
-      <!-- NAVBAR LOGO + MESSAGES (FIXED) -->
+      <!-- NAVBAR LOGO + TAGLINE -->
       <div class="navbar-brand-section">
-        <!-- ✅ LOGO ADDED HERE -->
         <a href="/" class="navbar-brand d-none d-md-flex">
           <img src="images/logo-transparent-png.webp" alt="Riveda Infosoft" loading="lazy">
         </a>
-        
-        <div class="navbar-messages-container">
-          <div id="navMessage1" class="navbar-message">💬 Smart CA Communicator - WhatsApp for CAs</div>
-          <div id="navMessage2" class="navbar-message">🔄 GST EasyMatch - Smart Reconciliation</div>
-          <div id="navMessage3" class="navbar-message">📊 TallyBridge - Easy Bank Import</div>
-          <div id="navMessage4" class="navbar-message">📑 PDF to Excel - Quick Conversion</div>
-        </div>
+        <span class="navbar-tagline d-none d-md-block">Accounting Technology for Chartered Accountants &amp; Businesses</span>
       </div>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -171,18 +268,17 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-          <!-- ✅ NEW NAV ITEM FOR US BOOKKEEPING -->
-          <li class="nav-item"><a class="nav-link" href="pages/us-bookkeeping.html">US Bookkeeping</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
             <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/tallybridge.html">Smart Bank Import Suite</a></li>
               <li><a class="dropdown-item" href="pages/smart-ca-communicator.html">Smart CA Communicator</a></li>
-              <li><a class="dropdown-item" href="pages/pdf-to-excel.html">PDF to Excel Converter</a></li>
-              <li><a class="dropdown-item" href="pages/gst-easymatch.html">GST EasyMatch</a></li>
-              <li><a class="dropdown-item" href="pages/tallybridge.html">TallyBridge</a></li>
-              <li><a class="dropdown-item" href="pages/tally-society-connect.html">Tally-Society Connect</a></li>
+              <li><a class="dropdown-item" href="pages/school-college-soft.html">Tally School and College Soft</a></li>
+              <li><a class="dropdown-item" href="pages/tally-society-connect.html">Tally Society Module</a></li>
+              <li><a class="dropdown-item" href="pages/tally-hospital-module.html">Tally Hospital Module</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="pages/us-bookkeeping.html">US Bookkeeping</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
             <ul class="dropdown-menu">
@@ -203,243 +299,308 @@
   <!-- Marquee -->
   <div class="marquee-container">
     <div class="color-changing-text">
-      RIVEDA INFOSOFT - TRANSFORMING BUSINESSES WITH INNOVATIVE SOLUTIONS - Quick Books Online or Desktop and TALLY & VBA EXPERTS
+      RIVEDA INFOSOFT - Accounting Technology | Desktop Software | Smart Bank Import Suite | Smart CA Communicator | Tally Automation | WhatsApp Business Integration
     </div>
   </div>
 
-  <!-- Hero Section – US Bookkeeping Focus -->
-  <section class="py-5" style="background:#111827; color:white;">
+  <!-- Hero Section – Accounting Technology & Desktop Software -->
+  <section class="home-hero py-5" style="background:#111827; color:white;">
     <div class="container">
-      <div class="row align-items-center g-4">
-        <!-- Left: Text -->
+      <div class="row align-items-center g-4 g-lg-5">
         <div class="col-lg-7">
-          <p class="text-uppercase mb-2" style="letter-spacing:2px; color:#22d3ee;">
-            US BOOKKEEPING SERVICES
+          <p class="text-uppercase mb-2 small fw-semibold" style="letter-spacing:2px; color:#22d3ee;">
+            ACCOUNTING TECHNOLOGY
           </p>
-          <h1 class="fw-bold mb-3" style="font-size:2.4rem;">
-            Remote US Bookkeeping & Clean-Up
-            <span class="d-block">for QuickBooks Online and Desktop Latest Versions</span>
+          <h1 class="fw-bold mb-3">
+            Accounting Technology &amp; Desktop Software for Accountants and Businesses
           </h1>
-          <p class="mb-3" style="font-size:1.05rem; max-width:650px;">
-            India-based accountant with 20+ years of experience in accounting, Tally and automation and a QuickBooks Online ProAdvisor Level 1 
-            – helping US small businesses and CPA firms maintain clean, accurate QuickBooks Online and Xero books
-            Working remotely from India, aligned to US time zones for smooth communication.
+          <p class="home-hero-subtitle mb-4">
+            Riveda Infosoft develops desktop software and automation solutions for Chartered Accountants, accounting firms, tax professionals and businesses. Our products help automate bank statement imports, GST reconciliation, accounting workflows, Tally-based vertical modules and secure client communication using WhatsApp Business.
           </p>
-         <p class="mb-3" style="font-size:0.98rem; max-width:650px;">
-  <span style="
-    background-color:#D1FAE5;
-    color:#065F46;
-    padding:4px 10px;
-    border-radius:6px;
-    display:inline-block;
-  ">
-    QuickBooks Online ProAdvisor – Level 1 Certified (Nov 2025).
-  </span>
-</p>
-
-
-
-          <ul class="mb-4" style="font-size:0.98rem;">
-            <li>Monthly bookkeeping & bank / credit card reconciliations</li>
-            <li>6–24+ months catch-up & clean-up projects</li>
-            <li>QBO setup / re-setup and chart of accounts</li>
-            <li>Back-office support for CPAs and EA firms</li>
-          </ul>
-
-          <div class="d-flex flex-wrap gap-2">
-            <a href="pages/us-bookkeeping.html" class="btn btn-lg"
-               style="background:#14b8a6; border:none; color:white;">
-              View US Bookkeeping Details
+          <div class="home-hero-highlights" role="list" aria-label="Products and services">
+            <span class="home-hero-badge" role="listitem"><i class="fas fa-university" aria-hidden="true"></i>Smart Bank Import Suite</span>
+            <span class="home-hero-badge" role="listitem"><i class="fab fa-whatsapp" aria-hidden="true"></i>Smart CA Communicator</span>
+            <span class="home-hero-badge" role="listitem"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Tally School and College Soft</span>
+            <span class="home-hero-badge" role="listitem"><i class="fas fa-building" aria-hidden="true"></i>Tally Society Module</span>
+            <span class="home-hero-badge" role="listitem"><i class="fas fa-hospital" aria-hidden="true"></i>Tally Hospital Module</span>
+            <span class="home-hero-badge" role="listitem"><i class="fas fa-cogs" aria-hidden="true"></i>Tally Automation</span>
+          </div>
+          <div class="d-flex flex-wrap gap-2 home-hero-cta">
+            <a href="#products" class="btn btn-lg" style="background:#14b8a6; border:none; color:white;">
+              Explore Products
             </a>
             <a href="#contact" class="btn btn-outline-light btn-lg">
-             Request a Free 30‑Minute Discovery Call
+              Contact Us
             </a>
           </div>
         </div>
-
-        <!-- Right: Engagement box -->
         <div class="col-lg-5">
-          <div class="p-4 rounded-3 shadow"
-               style="background:white; color:#111827; border-top:4px solid #14b8a6;">
-            <h5 class="fw-bold mb-3">Typical Engagement</h5>
-            <ul class="mb-3 small">
-              <li>Diagnostic Systematic Review of existing QBO file & bank statements</li>
-              <li>Fix mis-categorised transactions & old unreconciled items</li>
-              <li>Monthly reports: Profit &amp; Loss, Balance Sheet, Cash Flow</li>
-              <li>Accurate, well-prepared books that CPAs love to work with.</li>
-            </ul>
-            <p class="small mb-0">
-              I also build automation tools such as PDF‑to‑Excel converters and Tally integrations to reduce manual work and errors.
+          <div class="home-hero-product-card">
+            <div class="home-hero-product-card-header">
+              <i class="fas fa-laptop-code" aria-hidden="true"></i>
+              <h2 class="h5 fw-bold mb-0">Desktop Software for Accountants</h2>
+            </div>
+            <div class="home-hero-product-card-body">
+              <div class="home-hero-product-item">
+                <div class="home-hero-product-icon" aria-hidden="true">
+                  <i class="fas fa-university text-primary"></i>
+                </div>
+                <div>
+                  <strong class="d-block small">Smart Bank Import Suite</strong>
+                  <span class="small text-muted">Bank statement import, GST reconciliation, validation and safe accounting workflows</span>
+                </div>
+              </div>
+              <div class="home-hero-product-item">
+                <div class="home-hero-product-icon icon-whatsapp" aria-hidden="true">
+                  <i class="fab fa-whatsapp text-success"></i>
+                </div>
+                <div>
+                  <strong class="d-block small">Smart CA Communicator</strong>
+                  <span class="small text-muted">WhatsApp Business communication for Chartered Accountants</span>
+                </div>
+              </div>
+              <div class="home-hero-product-item">
+                <div class="home-hero-product-icon icon-gst" aria-hidden="true">
+                  <i class="fas fa-graduation-cap text-primary"></i>
+                </div>
+                <div>
+                  <strong class="d-block small">Tally School and College Soft</strong>
+                  <span class="small text-muted">Tally-based accounting and fee management for educational institutions</span>
+                </div>
+              </div>
+              <div class="home-hero-product-item">
+                <div class="home-hero-product-icon icon-pdf" aria-hidden="true">
+                  <i class="fas fa-building text-primary"></i>
+                </div>
+                <div>
+                  <strong class="d-block small">Tally Society Module</strong>
+                  <span class="small text-muted">Tally-based society and apartment accounting solution</span>
+                </div>
+              </div>
+              <div class="home-hero-product-item">
+                <div class="home-hero-product-icon" aria-hidden="true">
+                  <i class="fas fa-hospital text-primary"></i>
+                </div>
+                <div>
+                  <strong class="d-block small">Tally Hospital Module</strong>
+                  <span class="small text-muted">Tally-based hospital accounting and billing support</span>
+                </div>
+              </div>
+            </div>
+            <p class="home-hero-product-foot mb-0">
+              <i class="fas fa-check-circle text-success me-1" aria-hidden="true"></i>
+              Built by accountants, for accountants — with practical desktop automation and WhatsApp Business integration.
             </p>
-              <hr class="my-3">
-  <div class="d-flex align-items-center gap-3">
-    <img src="images/qbo-proadvisor-level1.jpg"
-         alt="QuickBooks Online ProAdvisor Level 1 Certified"
-         style="height:64px; width:auto;">
-    <div class="small">
-      <strong>QuickBooks Online Certification – Level 1</strong><br>
-      Certified ProAdvisor for QBO as of Nov 2025.
-    </div>
-  </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Accounting Technology Section -->
-  <section id="accounting-technology" class="py-5 bg-light">
+  <!-- Featured Software Products -->
+  <section id="featured-products" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-3">Accounting Technology &amp; Business Automation</h2>
-      <p class="text-center text-muted mb-5 mx-auto" style="max-width:800px;">
-        Riveda Infosoft is an <strong>Accounting Technology Company</strong> that develops desktop business software
-        for Chartered Accountants, tax professionals, and growing businesses — alongside US bookkeeping and accounting services.
+      <h2 class="text-center mb-3">Featured Software Products</h2>
+      <p class="text-center text-muted mb-5 mx-auto" style="max-width:720px;">
+        Desktop applications developed by Riveda Infosoft to automate accounting workflows for Chartered Accountants and businesses.
       </p>
-      <div class="row g-4 mb-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-4 justify-content-center">
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <img src="images/smart bank import.webp" class="img-fluid" alt="Smart Bank Import Suite" loading="lazy">
+            </div>
+            <h3 class="h5 mt-2">Smart Bank Import Suite</h3>
+            <p class="small text-muted px-2">Includes bank statement import, GST reconciliation support, validation and accounting workflow automation for Tally and accounting systems.</p>
+            <a href="pages/tallybridge.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <i class="fab fa-whatsapp fa-4x" style="color:#25D366;" aria-hidden="true"></i>
+            </div>
+            <h3 class="h5 mt-2">Smart CA Communicator</h3>
+            <p class="small text-muted px-2">Desktop application for Chartered Accountants to communicate with clients using their own WhatsApp Business accounts through Meta WhatsApp Cloud API.</p>
+            <a href="pages/smart-ca-communicator.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <i class="fas fa-graduation-cap fa-4x text-primary" aria-hidden="true"></i>
+            </div>
+            <h3 class="h5 mt-2">Tally School and College Soft</h3>
+            <p class="small text-muted px-2">Comprehensive educational institution management software integrated with Tally for fees, accounts and reporting.</p>
+            <a href="pages/school-college-soft.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <img src="images/hs new.webp" class="img-fluid" alt="Tally Society Module" loading="lazy">
+            </div>
+            <h3 class="h5 mt-2">Tally Society Module</h3>
+            <p class="small text-muted px-2">Smart accounting and management solution for housing societies and apartment associations using Tally.</p>
+            <a href="pages/tally-society-connect.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <i class="fas fa-hospital fa-4x text-primary" aria-hidden="true"></i>
+            </div>
+            <h3 class="h5 mt-2">Tally Hospital Module</h3>
+            <p class="small text-muted px-2">Hospital management module integrated with Tally for billing, inventory and financial accounting.</p>
+            <a href="pages/tally-hospital-module.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Riveda Infosoft -->
+  <section id="why-choose-us" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Why Choose Riveda Infosoft</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="feature-card h-100">
+            <div class="feature-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+            <h3 class="h5">20+ Years Accounting Experience</h3>
+            <p class="mb-0 small text-muted">Built on over two decades of hands-on accounting, taxation, and financial systems experience.</p>
+          </div>
+        </div>
         <div class="col-md-6 col-lg-4">
           <div class="feature-card h-100">
             <div class="feature-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
             <h3 class="h5">Desktop Software Development</h3>
-            <p class="mb-0 small text-muted">Windows desktop applications for accounting firms and businesses — built for reliability and local data control.</p>
+            <p class="mb-0 small text-muted">Windows desktop applications designed for reliability, local data control, and accountant-friendly workflows.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="feature-card h-100">
             <div class="feature-icon"><i class="fas fa-cogs" aria-hidden="true"></i></div>
-            <h3 class="h5">Business Automation</h3>
-            <p class="mb-0 small text-muted">Automate repetitive workflows — from document processing to client communication — saving hours every week.</p>
+            <h3 class="h5">Accounting Automation Expertise</h3>
+            <p class="mb-0 small text-muted">Bank import, GST reconciliation, document conversion, and workflow automation that saves hours of manual work.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="feature-card h-100">
             <div class="feature-icon"><i class="fas fa-calculator" aria-hidden="true"></i></div>
-            <h3 class="h5">Accounting Automation</h3>
-            <p class="mb-0 small text-muted">Tally integrations, GST reconciliation, bank import tools, and custom modules for Indian accounting practices.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="feature-card h-100">
-            <div class="feature-icon"><i class="fas fa-university" aria-hidden="true"></i></div>
-            <h3 class="h5">Bank Statement Import</h3>
-            <p class="mb-0 small text-muted">Smart Bank Import Suite (TallyBridge) and PDF to Excel tools for seamless bank reconciliation in Tally.</p>
+            <h3 class="h5">Tally &amp; QuickBooks Knowledge</h3>
+            <p class="mb-0 small text-muted">Deep expertise in Tally Prime, QuickBooks Online, Excel, and VBA — software and services that work together.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="feature-card h-100">
             <div class="feature-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
-            <h3 class="h5">WhatsApp Business Integration</h3>
-            <p class="mb-0 small text-muted">Smart CA Communicator connects to Meta Cloud API using Embedded Signup — customers use their own WhatsApp Business accounts.</p>
+            <h3 class="h5">Meta WhatsApp Business Cloud API</h3>
+            <p class="mb-0 small text-muted">Smart CA Communicator integrates via Meta Embedded Signup — customers use their own WhatsApp Business accounts.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="feature-card h-100">
-            <div class="feature-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
-            <h3 class="h5">Document Automation</h3>
-            <p class="mb-0 small text-muted">Convert PDFs to Excel, manage documents, and streamline data entry for accounting and compliance workflows.</p>
+            <div class="feature-icon"><i class="fas fa-tools" aria-hidden="true"></i></div>
+            <h3 class="h5">Practical Tools for Accountants</h3>
+            <p class="mb-0 small text-muted">Every product is built to solve real problems faced by CAs, tax professionals, and business owners every day.</p>
           </div>
         </div>
-      </div>
-      <div class="text-center">
-        <a href="#products" class="btn btn-primary btn-lg me-2 mb-2">
-          <i class="fas fa-th-large me-2" aria-hidden="true"></i>Explore Software Products
-        </a>
-        <a href="#contact" class="btn btn-outline-primary btn-lg mb-2">
-          <i class="fas fa-envelope me-2" aria-hidden="true"></i>Contact Us
-        </a>
       </div>
     </div>
   </section>
 
   <!-- Products Section -->
-  <section id="products" class="py-2">
+  <section id="products" class="py-4">
     <div class="container">
-      <!-- ✅ New separator + explanation for Indian/Tally section -->
-      <hr class="my-5">
-      <h2 class="h4 mb-2">For Indian Businesses &amp; Tally Users</h2>
-      <p class="text-muted mb-4">
-        In addition to US bookkeeping, I offer automation tools and accounting solutions specifically built 
-        for Indian businesses using Tally Prime. US clients can ignore this section.
+      <h2 class="text-center mb-3">All Software Products</h2>
+      <p class="text-muted text-center mb-4">
+        Desktop automation tools and Tally solutions for Indian businesses and accounting professionals.
       </p>
-
-      <h2 class="text-center mb-3">Tally Automation Tools &amp; Products</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-3 mb-3">
-          <div class="product-card text-center">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 justify-content-center g-3">
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <img src="images/smart bank import.webp" class="img-fluid" alt="Smart Bank Import Suite" loading="lazy">
+            </div>
+            <h3 class="h5 mt-2">Smart Bank Import Suite</h3>
+            <p class="small text-muted px-2">Bank statement import, GST reconciliation support, validation and workflow automation.</p>
+            <a href="pages/tallybridge.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card text-center h-100">
             <div class="product-image-container">
               <i class="fab fa-whatsapp fa-4x" style="color:#25D366;" aria-hidden="true"></i>
             </div>
             <h3 class="h5 mt-2">Smart CA Communicator</h3>
-            <p class="small text-muted px-2">Desktop application for Chartered Accountants to communicate with clients using their own WhatsApp Business accounts through Meta Cloud API.</p>
             <a href="pages/smart-ca-communicator.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-3">
-          <div class="product-card text-center">
+        <div class="col">
+          <div class="product-card text-center h-100">
             <div class="product-image-container">
-              <img src="images/pdf to excel logo no bckgrd.webp" class="img-fluid" alt="PDF to Excel" loading="lazy">
+              <i class="fas fa-graduation-cap fa-4x text-primary" aria-hidden="true"></i>
             </div>
-            <h3 class="h5 mt-2">PDF to Excel</h3>
-            <a href="pages/pdf-to-excel.html" class="btn btn-primary btn-sm">Learn More</a>
+            <h3 class="h5 mt-2">Tally School and College Soft</h3>
+            <a href="pages/school-college-soft.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 mb-3">
-          <div class="product-card text-center">
+        <div class="col">
+          <div class="product-card text-center h-100">
             <div class="product-image-container">
-              <img src="images/gst reco.webp" class="img-fluid" alt="GST EasyMatch" loading="lazy">
+              <img src="images/hs new.webp" class="img-fluid" alt="Tally Society Module" loading="lazy">
             </div>
-            <h3 class="h5 mt-2">GST EasyMatch</h3>
-            <a href="pages/gst-easymatch.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-3">
-          <div class="product-card text-center">
-            <div class="product-image-container">
-              <img src="images/smart bank import.webp" class="img-fluid" alt="TallyBridge" loading="lazy">
-            </div>
-            <h3 class="h5 mt-2">TallyBridge</h3>
-            <a href="pages/tallybridge.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-3">
-          <div class="product-card text-center">
-            <div class="product-image-container">
-              <img src="images/hs new.webp" class="img-fluid" alt="Tally-Society Connect" loading="lazy">
-            </div>
-            <h3 class="h5 mt-2">Tally-Society Connect</h3>
+            <h3 class="h5 mt-2">Tally Society Module</h3>
             <a href="pages/tally-society-connect.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="product-card text-center h-100">
+            <div class="product-image-container">
+              <i class="fas fa-hospital fa-4x text-primary" aria-hidden="true"></i>
+            </div>
+            <h3 class="h5 mt-2">Tally Hospital Module</h3>
+            <a href="pages/tally-hospital-module.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-4 bg-light">
+  <!-- Professional Services -->
+  <section id="services" class="py-5 bg-light">
     <div class="container">
-      <h2 class="text-center mb-4">Tally &amp; Indian Accounting Services</h2>
+      <h2 class="text-center mb-4">Professional Services</h2>
+      <p class="text-center text-muted mb-5 mx-auto" style="max-width:720px;">
+        In addition to desktop software, Riveda Infosoft provides accounting and bookkeeping services for US and Indian businesses.
+      </p>
       <div class="row">
         <div class="col-md-6 col-lg-3 mb-4">
-          <div class="service-card">
-            <h3 class="h5">Tally License & Renewals</h3>
-            <a href="pages/tally-license.html" class="btn btn-primary btn-sm">Learn More</a>
+          <div class="service-card h-100">
+            <h3 class="h5">US Bookkeeping &amp; QuickBooks Support</h3>
+            <p class="small text-muted">Remote bookkeeping for QuickBooks Online and Desktop — monthly maintenance, catch-up projects, and CPA back-office support.</p>
+            <a href="pages/us-bookkeeping.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
           <div class="service-card">
-            <h3 class="h5">Tally Customizations</h3>
-            <a href="pages/tally-customizations.html" class="btn btn-primary btn-sm">Learn More</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-4">
-          <div class="service-card">
-            <h3 class="h5">Accounting & Taxation</h3>
+            <h3 class="h5">Accounting &amp; Taxation</h3>
+            <p class="small text-muted">Bookkeeping, financial reporting, and tax compliance support for Indian SMEs and professionals.</p>
             <a href="pages/accounting-taxation.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
         <div class="col-md-6 col-lg-3 mb-4">
           <div class="service-card">
+            <h3 class="h5">Tally Customizations</h3>
+            <p class="small text-muted">Custom TDL reports, modules, and Tally Prime enhancements tailored to your business needs.</p>
+            <a href="pages/tally-customizations.html" class="btn btn-primary btn-sm">Learn More</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4">
+          <div class="service-card">
             <h3 class="h5">Tally Integration</h3>
+            <p class="small text-muted">Connect Tally with banks, Excel, and third-party systems for seamless data flow.</p>
             <a href="pages/tally-integration.html" class="btn btn-primary btn-sm">Learn More</a>
           </div>
         </div>
@@ -447,7 +608,7 @@
     </div>
   </section>
 
-  <!-- Contact Section (EmailJS + WHATSAPP ADDED) -->
+  <!-- Contact Section (EmailJS + WHATSAPP) -->
   <section id="contact" class="py-5">
     <div class="container">
       <h2 class="text-center mb-5">Get In Touch</h2>
@@ -529,38 +690,40 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-4" style="background:#152238;">
+  <footer class="py-4" style="background:#152238;" role="contentinfo">
     <div class="container">
       <div class="row">
-        <div class="col-md-3 mb-3">
+        <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Quick Links</h5>
           <ul class="list-unstyled text-start">
             <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
             <li><a href="#products" class="text-white text-decoration-none">Products</a></li>
-            <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#services" class="text-white text-decoration-none">Professional Services</a></li>
             <li><a href="pages/about-us.html" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Technology</h5>
           <ul class="list-unstyled text-start">
             <li class="text-white">Software Development</li>
             <li class="text-white">Accounting Automation</li>
             <li class="text-white">WhatsApp Business Integration</li>
             <li class="text-white">Desktop Applications</li>
+            <li class="text-white">Tally Automation</li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Products</h5>
           <ul class="list-unstyled text-start">
+            <li><a href="pages/tallybridge.html" class="text-white text-decoration-none">Smart Bank Import Suite</a></li>
             <li><a href="pages/smart-ca-communicator.html" class="text-white text-decoration-none">Smart CA Communicator</a></li>
-            <li><a href="pages/pdf-to-excel.html" class="text-white text-decoration-none">PDF to Excel Converter</a></li>
-            <li><a href="pages/gst-easymatch.html" class="text-white text-decoration-none">GST EasyMatch</a></li>
-            <li><a href="pages/tallybridge.html" class="text-white text-decoration-none">TallyBridge</a></li>
-            <li><a href="pages/tally-society-connect.html" class="text-white text-decoration-none">Tally-Society Connect</a></li>
+            <li><a href="pages/school-college-soft.html" class="text-white text-decoration-none">Tally School and College Soft</a></li>
+            <li><a href="pages/tally-society-connect.html" class="text-white text-decoration-none">Tally Society Module</a></li>
+            <li><a href="pages/tally-hospital-module.html" class="text-white text-decoration-none">Tally Hospital Module</a></li>
           </ul>
         </div>
-        <div class="col-md-3 mb-3">
+        <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Contact Info</h5>
           <ul class="list-unstyled text-start">
             <li class="text-white">WhatsApp: +91 9490128503</li>
@@ -570,7 +733,7 @@
           </ul>
         </div>
       </div>
-      <p class="mt-3 text-white text-center mb-0">© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+      <p class="mt-3 text-white text-center mb-0">© 2019-2026 Riveda Infosoft. All rights reserved.</p>
     </div>
   </footer>
 

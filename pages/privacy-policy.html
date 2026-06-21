@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -14,32 +14,21 @@
   <style>
     .marquee-container {
       width: 100%;
-      overflow: hidden;
       background: #152238;
       padding: 8px 0;
       margin: 0;
+      text-align: center;
     }
 
     .color-changing-text {
-      display: inline-block;
-      font-size: 16px;
+      display: block;
+      font-size: 14px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       letter-spacing: 0.5px;
-      white-space: nowrap;
-      padding-left: 100%;
-      animation: marquee 30s linear infinite, colorChange 12s linear infinite;
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-
-    @keyframes colorChange {
-      0%, 100% { color: #ffffff; }
-      25% { color: #ffc107; }
-      50% { color: #28a745; }
-      75% { color: #17a2b8; }
+      color: #ffffff;
+      text-align: center;
+      padding: 0 12px;
+      line-height: 1.4;
     }
   </style>
 </head>
@@ -57,19 +46,15 @@
           <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
-            <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="tallybridge.html">Smart Bank Import Suite</a></li>
               <li><a class="dropdown-item" href="smart-ca-communicator.html">Smart CA Communicator</a></li>
-              <li><a class="dropdown-item" href="pdf-to-excel.html">PDF to Excel Converter</a></li>
-              <li><a class="dropdown-item" href="gst-easymatch.html">GST EasyMatch</a></li>
-              <li><a class="dropdown-item" href="tallybridge.html">TallyBridge</a></li>
-              <li><a class="dropdown-item" href="tally-society-connect.html">Tally-Society Connect</a></li>
-              <li><a class="dropdown-item" href="school-college-soft.html">School/College Soft</a></li>
-              <li><a class="dropdown-item" href="chitfund-soft.html">Chitfund Soft</a></li>
-              <li><a class="dropdown-item" href="tally-auto-backup.html">Tally Auto Backup</a></li>
-              <li><a class="dropdown-item" href="advanced-document-manager.html">Advanced Document Manager</a></li>
+              <li><a class="dropdown-item" href="school-college-soft.html">Tally School and College Soft</a></li>
+              <li><a class="dropdown-item" href="tally-society-connect.html">Tally Society Module</a></li>
               <li><a class="dropdown-item" href="tally-hospital-module.html">Tally Hospital Module</a></li>
             </ul>
           </li>
+          <li class="nav-item"><a class="nav-link" href="us-bookkeeping.html">US Bookkeeping</a></li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
             <ul class="dropdown-menu">
@@ -88,7 +73,7 @@
 
   <div class="marquee-container">
     <div class="color-changing-text">
-      RIVEDA INFOSOFT - TRANSFORMING BUSINESSES WITH INNOVATIVE SOLUTIONS - TALLY AND VBA EXPERTS
+      RIVEDA INFOSOFT - Accounting Technology | Desktop Software | Smart Bank Import Suite | Smart CA Communicator | Tally Automation | WhatsApp Business Integration
     </div>
   </div>
 
@@ -144,7 +129,15 @@
         </ul>
 
         <h2 class="h4 mb-3">5. Meta WhatsApp Business Integration</h2>
-        <p>Smart CA Communicator, our desktop application for Chartered Accountants, integrates with the Meta WhatsApp Business Cloud API. When customers connect their own WhatsApp Business account through Meta Embedded Signup, the following data may be stored locally on the customer's desktop computer:</p>
+        <p>Smart CA Communicator is a Windows desktop application for Chartered Accountants. It integrates with the Meta WhatsApp Business Platform (Cloud API) and runs on the customer's own computer — it is not cloud-hosted SaaS operated by Riveda Infosoft.</p>
+        <ul class="mb-3">
+          <li>Smart CA Communicator is a Windows desktop application.</li>
+          <li>WhatsApp Business configuration data is stored locally on the customer's computer unless the customer chooses another storage location.</li>
+          <li>Riveda Infosoft does not permanently store WhatsApp message contents on its own servers.</li>
+          <li>Message history may be stored locally inside the customer's desktop application for customer reference.</li>
+          <li>Smart CA Communicator uses Meta WhatsApp Business Platform in accordance with Meta Platform Terms and applicable developer policies.</li>
+        </ul>
+        <p>When customers connect their own WhatsApp Business account through Meta Embedded Signup, the following configuration data may be stored locally on the customer's desktop computer:</p>
         <ul class="mb-3">
           <li><strong>Business ID</strong> – Meta Business account identifier required to manage WhatsApp Business assets</li>
           <li><strong>WABA ID</strong> – WhatsApp Business Account identifier linked to the customer's business</li>
@@ -152,7 +145,7 @@
           <li><strong>Access Token</strong> – API credential granted by the customer during Meta Embedded Signup, used to send messages on behalf of the customer's own account</li>
           <li><strong>Template Names</strong> – Names of Meta-approved message templates associated with the customer's WhatsApp Business account</li>
         </ul>
-        <p><strong>Purpose of storing data:</strong> This data is stored solely to enable the desktop software to send and manage WhatsApp Business messages using the customer's own account and phone number. Riveda Infosoft does not use this data for marketing, profiling, or any purpose unrelated to the software's messaging functionality.</p>
+        <p><strong>Purpose of storing data:</strong> This data is stored locally solely to enable the desktop software to send and manage WhatsApp Business messages using the customer's own account and phone number. Riveda Infosoft does not use this data for marketing, profiling, or any purpose unrelated to the software's messaging functionality.</p>
         <p><strong>Encryption:</strong> API credentials and configuration data stored on the customer's desktop are encrypted at rest using industry-standard encryption methods.</p>
         <p><strong>No selling of customer data:</strong> Riveda Infosoft does not sell, rent, or trade customer data — including WhatsApp Business API configuration data — to third parties. We do not collect Facebook user profile data through our software.</p>
         <p class="mb-4">Customers can revoke access and disconnect their WhatsApp Business account at any time through Meta Business Settings or within the desktop application.</p>
@@ -176,49 +169,36 @@
     </div>
   </section>
 
-  <footer class="py-4" style="background-color: #152238;">
+  <footer class="py-4" style="background-color: #152238;" role="contentinfo">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-2 mb-3">
+        <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Quick Links</h5>
           <ul class="list-unstyled text-start">
             <li><a href="../index.html" class="text-white text-decoration-none">Home</a></li>
             <li><a href="../index.html#products" class="text-white text-decoration-none">Products</a></li>
-            <li><a href="../index.html#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="../index.html#services" class="text-white text-decoration-none">Professional Services</a></li>
             <li><a href="about-us.html" class="text-white text-decoration-none">About Us</a></li>
-            <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            <li><a href="../index.html#contact" class="text-white text-decoration-none">Contact</a></li>
           </ul>
         </div>
-        <div class="col-md-6 col-lg-2 mb-3">
+        <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Technology</h5>
           <ul class="list-unstyled text-start">
             <li class="text-white">Software Development</li>
             <li class="text-white">Accounting Automation</li>
             <li class="text-white">WhatsApp Business Integration</li>
             <li class="text-white">Desktop Applications</li>
-          </ul>
-        </div>
-        <div class="col-md-6 col-lg-2 mb-3">
-          <h5 class="text-white mb-3">Services</h5>
-          <ul class="list-unstyled text-start">
-            <li><a href="tally-license.html" class="text-white text-decoration-none">Tally License & Renewals</a></li>
-            <li><a href="tally-customizations.html" class="text-white text-decoration-none">Tally Customizations</a></li>
-            <li><a href="accounting-taxation.html" class="text-white text-decoration-none">Accounting & Taxation</a></li>
-            <li><a href="tally-integration.html" class="text-white text-decoration-none">Tally Integration</a></li>
+            <li class="text-white">Tally Automation</li>
           </ul>
         </div>
         <div class="col-md-6 col-lg-3 mb-3">
           <h5 class="text-white mb-3">Products</h5>
           <ul class="list-unstyled text-start">
+            <li><a href="tallybridge.html" class="text-white text-decoration-none">Smart Bank Import Suite</a></li>
             <li><a href="smart-ca-communicator.html" class="text-white text-decoration-none">Smart CA Communicator</a></li>
-            <li><a href="pdf-to-excel.html" class="text-white text-decoration-none">PDF to Excel Converter</a></li>
-            <li><a href="gst-easymatch.html" class="text-white text-decoration-none">GST EasyMatch</a></li>
-            <li><a href="tallybridge.html" class="text-white text-decoration-none">TallyBridge</a></li>
-            <li><a href="tally-society-connect.html" class="text-white text-decoration-none">Tally-Society Connect</a></li>
-            <li><a href="school-college-soft.html" class="text-white text-decoration-none">School/College Soft</a></li>
-            <li><a href="chitfund-soft.html" class="text-white text-decoration-none">Chitfund Soft</a></li>
-            <li><a href="tally-auto-backup.html" class="text-white text-decoration-none">Tally Auto Backup</a></li>
-            <li><a href="advanced-document-manager.html" class="text-white text-decoration-none">Advanced Document Manager</a></li>
+            <li><a href="school-college-soft.html" class="text-white text-decoration-none">Tally School and College Soft</a></li>
+            <li><a href="tally-society-connect.html" class="text-white text-decoration-none">Tally Society Module</a></li>
             <li><a href="tally-hospital-module.html" class="text-white text-decoration-none">Tally Hospital Module</a></li>
           </ul>
         </div>
@@ -232,7 +212,7 @@
           </ul>
         </div>
       </div>
-      <p class="mt-3 text-white text-center">© 2019-2025 Riveda Infosoft. All rights reserved.</p>
+      <p class="mt-3 text-white text-center mb-0">© 2019-2026 Riveda Infosoft. All rights reserved.</p>
     </div>
   </footer>
 
